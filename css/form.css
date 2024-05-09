@@ -13,6 +13,7 @@ label.error {
 
 .select2-results__option.select2-results__option--selectable {
     font-size: 1.6rem;
+    font-family: 'Poppins', 'sans-serif';
 }
 
 .select2.select2-container {
@@ -47,7 +48,7 @@ label.error {
     font-size: 1.6rem !important;
     font-family: 'Poppins', 'sans-serif';
     line-height: 2.8rem !important;
-    color: gray !important;
+    color: black !important;
     padding-left: 1.6rem !important;
     white-space: normal !important;
 }
@@ -57,7 +58,7 @@ label.error {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__placeholder {
-    color: gray !important;
+    color: black !important;
 }
 
 .main {
@@ -181,8 +182,41 @@ label.error {
     font-size: 3rem;
     text-align: center;
     width: calc(100% - 4.8rem);
+    margin-top: 4rem;
 }
 
 .submission {
     display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .form__section {
+        flex-direction: column;
+    }
+
+    .form__input {
+        width: 100%;
+    }
+
+    .select2-selection.select2-selection--single {
+        width: 100% !important;
+    }
+
+    .main__div {
+        flex-direction: column;
+    }
+
+    .form__section--disclaimer div {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .form__h1 {
+        text-align: center;
+    }
+
+    .form__label.form__phone {
+        margin-top: 3rem;
+    }
 }

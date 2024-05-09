@@ -52,7 +52,7 @@ $(document).ready(function () {
         }
 
         $.ajax({
-            url: 'https://mightier.site/wp-content/themes/mightier/Multiform/form-submission-betterhelp.php',
+            url: 'https://mightier.site/betterhelp/form-submission-betterhelp.php',
             data: JSON.stringify(data),
             type: 'POST',
             contentType: "application/json",
