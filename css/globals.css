@@ -55,7 +55,9 @@ table {
 
 :root {
     --color-blue: #E6F7FF;
+    --color-blue-dark: #0669F4;
     --color-gray: #D6D6D6;
+    --color-gray-dark: #999;
     --color-orange: #F37500;
 }
 
