@@ -1,0 +1,54 @@
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__div{
+    gap: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__h1{
+    font-family: 'Poppins', 'sans-serif';
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+
+.form__section{
+    display: flex;
+    gap: 2.6rem;
+}
+
+.form__label{
+    display: block;
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.form__input{
+    height: 4.8rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-gray);
+    width: 20rem;
+}
+
+.form__input.form__email{
+    width: 100%;
+}
+
+.form__details{
+    margin-top: 7rem;
+}
+
+.form__label.form__email{
+    margin-top: 3rem;
+}
