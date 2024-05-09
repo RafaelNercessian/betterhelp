@@ -17,9 +17,6 @@ $(document).ready(function () {
             address: {
                 required: true
             },
-            apartment: {
-                required: true
-            },
             city: {
                 required: true
             },
@@ -32,10 +29,33 @@ $(document).ready(function () {
         },
     });
 
-    $('.form_input--submit').on('submit', function (e) {
+    $('.form_input--submit').on('click', function (e) {
         e.preventDefault();
         if (!$('.form__details').valid()) {
             return false;
         }
+        $('.form').hide();
+        $('.submission').show();
+
+        var data = {
+            "first_name": $('#first_name').val(),
+            "last_name": $('#last_name').val(),
+            "email": $('#email').val(),
+            "address": $('#address').val(),
+            "apartment": $('#apartment').val(),
+            "city": $('#city').val(),
+            "state": $('#select2-state-container').attr('title'),
+            "zip": $('#zip').val(),
+            "phone": $('#phone').val(),
+            "accept_mightier_terms": $('#accept').is(":checked"),
+            "optin_marketin_email": $('#marketing').is(":checked"),
+        }
+
+        $.ajax({
+            url: 'https://mightier.site/wp-content/themes/mightier/Multiform/form-submission-betterhelp.php',
+            data: JSON.stringify(data),
+            type: 'POST',
+            contentType: "application/json",
+        });
     })
 });
