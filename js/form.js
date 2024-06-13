@@ -1,5 +1,37 @@
 $(document).ready(function () {
+    var anonymized_code = '';
+    var institution_id = '';
+    //Check if anonymized_code and institution_id came from home
+    if (localStorage.getItem('anonymized_code')) {
+        anonymized_code = localStorage.getItem('anonymized_code');
+    }
+    if (localStorage.getItem('institution_id')) {
+        institution_id = localStorage.getItem('institution_id');
+    }
+
+    //If nothing found try to check if the paramters are in this url instead
+    if (anonymized_code == '' && institution_id == '') {
+        var queryString = window.location.search;
+        queryString = queryString.substring(1);
+        var params = queryString.split('&');
+        var anonymized_code = '';
+        var institution_id = '';
+        $.each(params, function (i, param) {
+            var parts = param.split('=');
+            var key = parts[0];
+            var value = parts[1];
+            if (key === 'anonymized_code') {
+                anonymized_code = value;
+            } else if (key === 'institution_id') {
+                institution_id = value;
+            }
+        });
+    }
+
     $('#state').select2();
+
+    $("#phone").mask("(999) 999-9999");
+
 
     //Form validation
     $('.form__details').validate({
@@ -25,6 +57,16 @@ $(document).ready(function () {
             },
             phone: {
                 required: true
+            },
+            accept: {
+                required: true
+            }
+        },
+        errorPlacement(error, element) {
+            if (element.attr('name') === 'accept') {
+                error.insertAfter($('#label__accept'));
+            } else {
+                error.insertAfter(element);
             }
         },
     });
@@ -48,14 +90,23 @@ $(document).ready(function () {
             "zip": $('#zip').val(),
             "phone": $('#phone').val(),
             "accept_mightier_terms": $('#accept').is(":checked"),
-            "optin_marketin_email": $('#marketing').is(":checked"),
+            "optin_marketing_email": $('#marketing').is(":checked"),
+            "anonymized_code": anonymized_code,
+            "institution_id": institution_id
         }
 
-        $.ajax({
-            url: 'https://mightier.site/betterhelp/form-submission-betterhelp.php',
-            data: JSON.stringify(data),
-            type: 'POST',
-            contentType: "application/json",
+        var settings = {
+            "url": "https://api2.mightier.com/partner/bh/member",
+            "method": "POST",
+            "timeout": 0,
+            "headers": {
+                "Content-Type": "application/json"
+            },
+            "data": JSON.stringify(data),
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
         });
     })
 });
