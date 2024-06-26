@@ -35,11 +35,13 @@ $(document).ready(function () {
 
     var data = {
         "userId": userId,
-        "orgId": orgId
+        "orgId": orgId,
+        "anonymized_code": anonymized_code,
+        "institution_id": institution_id
     }
 
     var settings = {
-        "url": `https://api2.mightier.com/partner/bh/eligible?userId=${data.userId}&orgId=${data.orgId}`,
+        "url": `https://api2.mightier.com/partner/bh/eligible?userId=${data.anonymized_code}&orgId=${data.institution_id}`,
         "method": "GET",
         "timeout": 0,
     };

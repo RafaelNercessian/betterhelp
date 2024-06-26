@@ -1,105 +1,2085 @@
-.main {
-    background: var(--color-blue);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-    clip-path: polygon(100% 100%, 0% 100%, 0.00% 4.68%, 2.00% 4.97%, 4.00% 5.26%, 6.00% 5.54%, 8.00% 5.81%, 10.00% 6.06%, 12.00% 6.28%, 14.00% 6.48%, 16.00% 6.66%, 18.00% 6.80%, 20.00% 6.91%, 22.00% 6.98%, 24.00% 7.02%, 26.00% 7.02%, 28.00% 6.98%, 30.00% 6.91%, 32.00% 6.80%, 34.00% 6.66%, 36.00% 6.48%, 38.00% 6.28%, 40.00% 6.06%, 42.00% 5.81%, 44.00% 5.54%, 46.00% 5.26%, 48.00% 4.97%, 50.00% 4.68%, 52.00% 4.39%, 54.00% 4.10%, 56.00% 3.82%, 58.00% 3.55%, 60.00% 3.30%, 62.00% 3.08%, 64.00% 2.88%, 66.00% 2.70%, 68.00% 2.56%, 70.00% 2.45%, 72.00% 2.38%, 74.00% 2.34%, 76.00% 2.34%, 78.00% 2.38%, 80.00% 2.45%, 82.00% 2.56%, 84.00% 2.70%, 86.00% 2.88%, 88.00% 3.08%, 90.00% 3.30%, 92.00% 3.55%, 94.00% 3.82%, 96.00% 4.10%, 98.00% 4.39%, 100.00% 4.68%);
+/*************************
+ Desktop
+ **************************/
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', 'sans-serif';
 }
 
-.main__header {
-    width: calc(100% - 4.8rem);
-    max-width: 165rem;
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
-    justify-content: end;
+strong {
+    font-weight: 700;
+}
+
+.st-nebraska .header__div--wrapper {
+    justify-content: space-between;
+}
+
+.st-nebraska .header__div--wrapper .header__div--pricing {
+    background: #f37500;
+    border-radius: 15.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(12, 153, 241, 0.25);
+}
+
+.st-nebraska .header__div--wrapper .header__div--pricing a:hover {
+    background-color: #D66801;
+}
+
+/* First Block - Banner with girl */
+.blockfirstsectioncorporate__section {
+    background: #E6F7FF;
+    margin-top: 7rem;
+    padding-top: 1rem;
+    position: relative;
+}
+
+.blockfirstsectioncorporate__img--blue {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.blockfirstsectioncorporate__img--blue--mobile, .blockfirstsectioncorporate__img--blue--medium {
+    display: none;
+}
+
+.blockfirstsectioncorporate__section--inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7.2rem;
+    position: relative;
+    width: calc(100% - 4.8rem);
+    min-height: 69.4rem;
+}
+
+.blockfirstsectioncorporate__div--inner--one {
+    max-width: 51.3rem;
+    z-index: 1;
+}
+
+.blockfirstsectioncorporate__h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.4rem;
+    line-height: 5.4rem;
+    color: #000;
+}
+
+.blockfirstsectioncorporate__h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 3.4rem;
+    color: #000;
+    margin-bottom: 0;
+    max-width: 49.5rem;
+    margin-top: 3.1rem;
+}
+
+.blockfirstsectioncorporate__a {
+    margin-top: 3.6rem;
+    background: #f37500;
+    border-radius: 15.4rem;
+    width: 24.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 6.9rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(12, 153, 241, 0.25);
+}
+
+.blockfirstsectioncorporate__a:visited, .blockfirstsectioncorporate__a:focus {
+    color: #fff;
+    background: #D66801;
+}
+
+.blockfirstsectioncorporate__a:hover {
+    color: #fff;
+    background: #D66801;
+}
+
+.blockfirstsectioncorporate__a:hover .chevron_corporate {
+    -webkit-animation: hoverAnimationCorporate 0.5s forwards;
+    animation: hoverAnimationCorporate 0.5s forwards;
+}
+
+@-webkit-keyframes hoverAnimationCorporate {
+    0% {
+        opacity: 0;
+        right: 18px;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        right: 10px;
+    }
+}
+
+@keyframes hoverAnimationCorporate {
+    0% {
+        opacity: 0;
+        right: 18px;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+        right: 10px;
+    }
+}
+
+.chevron_corporate {
+    background: url("https://www.mightier.com/wp-content/uploads/2022/06/CHEVRON-RIGHT.svg") no-repeat;
+    background-size: 100%;
+    width: 7px;
+    position: absolute;
+    background-position: center;
+    right: 16px;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    height: 100%;
+}
+
+.blockfirstsectioncorporate__img--boy {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70rem;
+    z-index: 0;
+}
+
+/* Second Section - Cicle therapeutic programs */
+.blockthirdsectionhome__section {
+    padding: 8.1rem 3rem 0;
+    background: #fff;
+    z-index: 1;
+    position: relative;
+}
+
+.blockthirdsectionhome__blue_shape_1 {
+    position: absolute;
+    right: 0;
+    width: 20%;
+}
+
+.blockthirdsectionhome__section--inner--vertical {
+    display: none;
+}
+
+.blockthirdsectionhome__h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 5.8rem;
+    text-align: center;
+    max-width: 89rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-.main__header--outter {
-    background: white;
+.blockthirdsectionhome__section--inner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 5.2rem;
 }
 
-.main__div {
+.blockthirdsectionhome__div--one {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    width: 60.4rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    gap: 1.7rem;
-    align-items: center;
-    margin-bottom: 7.9rem;
+    margin-top: -1.5rem;
+    gap: 8rem;
 }
 
-.main__a--top.main__a {
+.blockthirdsectionhome__p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #097bc2;
+    margin-top: 0;
+    margin-bottom: 0;
+    background: #fff;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.blockthirdsectionhome__div--two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 9rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: -2.5rem;
+}
+
+.blockthirdsectionbh__h2 {
+    color: #2B2E34;
+    text-align: center;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.blockthirdsectionbh__section {
+    margin-top: 9.4rem;
+}
+
+.blockthirdsectionbh__section .blockfirstsectioncorporate__a{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Third Section - Boston / Harvard */
+.blockfourthsectionhome__section {
+    padding: 2rem;
+    background: #fff;
+    z-index: 1;
+    position: relative;
+}
+
+.blockfourthsectionhome__section--inner {
+    max-width: 60.4rem;
+    margin: 0 auto;
+}
+
+.blockfourthsectionhome__div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem 1.6rem;
+    background: #F3FAFE;
+    width: max-content;
+}
+
+.blockfourthsectionhome__div img {
+    margin: 0.5rem;
+}
+
+.blockfourthsectionhome__h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: #707070;
+    padding-top: 2rem;
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+.blockfourthsectionhome__a {
+    background: #0174DF;
+    -webkit-box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+    border-radius: 15rem;
+    padding: 1.4rem 3.2rem;
+    display: block;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: #fff;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-top: 3rem;
+}
+
+.blockfourthsectionhome__a:focus, .blockfourthsectionhome__a:active, .blockfourthsectionhome__a:hover, .blockfourthsectionhome__a:visited {
+    color: #fff;
+    background: #0174DF;
+}
+
+.blockfourthsectionhomenew__section {
+    position: relative;
+    margin-top: 10rem;
+}
+
+.blockfourthsectionhomenew__section--inner {
+    background: #f8f8f8;
+    min-height: 52rem;
+    -webkit-clip-path: polygon(100% 0%, 0% 0%, 0% 78.31%, 2% 77.95%, 4% 77.62%, 6% 77.31%, 8% 77.03%, 10% 76.77%, 12% 76.55%, 14% 76.37%, 16% 76.22%, 18% 76.11%, 20% 76.03%, 22% 76%, 24% 76.01%, 26% 76.06%, 28% 76.15%, 30% 76.28%, 32% 76.44%, 34% 76.64%, 36% 76.88%, 38% 77.14%, 40% 77.44%, 42% 77.76%, 44% 78.1%, 46% 78.47%, 48% 78.85%, 50% 79.24%, 52% 79.63%, 54% 80.04%, 56% 80.44%, 58% 80.83%, 60% 81.22%, 62% 81.6%, 64% 81.96%, 66% 82.3%, 68% 82.62%, 70% 82.91%, 72% 83.17%, 74% 83.4%, 76% 83.59%, 78% 83.75%, 80% 83.87%, 82% 83.95%, 84% 83.99%, 86% 84%, 88% 83.96%, 90% 83.88%, 92% 83.76%, 94% 83.6%, 96% 83.41%, 98% 83.18%, 100% 82.93%);
+    clip-path: polygon(100% 0%, 0% 0%, 0% 78.31%, 2% 77.95%, 4% 77.62%, 6% 77.31%, 8% 77.03%, 10% 76.77%, 12% 76.55%, 14% 76.37%, 16% 76.22%, 18% 76.11%, 20% 76.03%, 22% 76%, 24% 76.01%, 26% 76.06%, 28% 76.15%, 30% 76.28%, 32% 76.44%, 34% 76.64%, 36% 76.88%, 38% 77.14%, 40% 77.44%, 42% 77.76%, 44% 78.1%, 46% 78.47%, 48% 78.85%, 50% 79.24%, 52% 79.63%, 54% 80.04%, 56% 80.44%, 58% 80.83%, 60% 81.22%, 62% 81.6%, 64% 81.96%, 66% 82.3%, 68% 82.62%, 70% 82.91%, 72% 83.17%, 74% 83.4%, 76% 83.59%, 78% 83.75%, 80% 83.87%, 82% 83.95%, 84% 83.99%, 86% 84%, 88% 83.96%, 90% 83.88%, 92% 83.76%, 94% 83.6%, 96% 83.41%, 98% 83.18%, 100% 82.93%);
+}
+
+.blockfourthsectionhomenew__img--parent--app {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.blockfourthsectionhomenew__img--parent--app--medium {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.blockfourthsectionhomenew__img--blue--dots {
+    position: absolute;
+    left: 0;
+    bottom: 13rem;
+}
+
+.blockfourthsectionhomenew__h2 {
+    margin-top: 0;
+    max-width: 43rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    color: #000;
+    width: 43rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blockfourthsectionhomenew__div {
+    width: 44%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 40rem;
+}
+
+.blockfourthsectionhomenew__div--icon-group {
+    width: 43rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blockfourthsectionhome__a.blocksixthsectionhome__a {
+    margin-left: 0;
+    margin-right: unset;
+    margin-top: 0;
+}
+
+.blocktenthsectionnewhometwo__div .blockfourthsectionhome__a {
+    margin-left: 0;
+}
+
+.blockfourthsectionhome__p {
+    font-family: "Fredoka", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+    text-align: center;
+    color: #fff;
+    max-width: 46rem;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.blockfourthsectionhome__img--main {
+    height: 100%;
+}
+
+.blockfourthsectionhome__img--main--extrasmall, .blockfourthsectionhome__img--main--small, .blockfourthsectionhome__img--main--medium {
+    display: none;
+}
+
+/* Fourth Section - Three images middle */
+.blockfourthsectionstnebraska__section {
+    position: relative;
+    padding: 3rem 3rem 0 3rem;
+    background: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.blockfourthsectionstnebraska__section--apps {
+    margin-left: 6rem;
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.8rem;
+}
+
+.blockfourthsectionstnebraska__section h3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.blockfourthsectionstnebraska__h3 {
+    color: #000;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.blockfourthsectionstnebraska__p--one {
+    line-height: 3.2rem;
+    margin-top: 1.6rem;
+}
+
+.blockfourthsectionstnebraska__section--inner {
+    position: relative;
+}
+
+.blockfourthsectionstnebraska__section .wrapper {
+    gap: 9rem;
+    align-items: center;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.blockfourthsectionstnebraska__section .wrapper p {
+    font-size: 2rem;
+    margin-left: 6rem;
+}
+
+.blockfourthsectionstnebraska__section .wrapper h3 img {
+    margin-right: 2rem;
+}
+
+.blockfourthsectionstnebraska__div--one {
+    max-width: 43rem;
+}
+
+.blockfourthsectionstnebraska__section .illustrative {
+    position: relative;
+    z-index: 1;
+}
+
+.blockfourthsectionstnebraska__img--gray--dotted {
+    position: absolute;
+    right: 35%;
+    top: 16%;
+    z-index: -1;
+}
+
+.blockfourthsectionstnebraska__img--gray--dotted--mobile {
+    position: absolute;
+    right: 35%;
+    top: 16%;
+    z-index: -1;
+    display: none;
+}
+
+/* Fifth Section - Percentages */
+.blockfifthsectioncorporate__section {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 9rem;
+    margin-bottom: 15rem;
+}
+
+.blockfifthsectioncorporate__section--wrapper {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-top: 14rem;
+}
+
+.blockfifthsectioncorporate__h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+    color: #012b60;
+}
+
+.blockfifthsectioncorporate__p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.blockfifthsectioncorporate__p--stats {
+    width: 27.4rem;
+}
+
+.blockfifthsectioncorporate__a {
+    width: 20rem;
+    margin-top: 4.8rem;
+}
+
+.blockfifthsectioncorporate__a:hover {
+    background: #097bc2;
+}
+
+.blockfifthsectioncorporate__section--stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 5rem;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blockfifthsectioncorporate__svg--stats--one, .blockfifthsectioncorporate__svg--stats--two, .blockfifthsectioncorporate__svg--stats--three {
+    width: 210px;
+    height: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.blockfifthsectioncorporate__svg--stats--one .circle, .blockfifthsectioncorporate__svg--stats--two .circle, .blockfifthsectioncorporate__svg--stats--three .circle {
+    stroke: #097bc2;
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+}
+
+.blockfifthsectioncorporate__section[data-emergence=visible] .blockfifthsectioncorporate__svg--stats--one .circle, .blockfifthsectioncorporate__section[data-emergence=visible] .blockfifthsectioncorporate__svg--stats--two .circle, .blockfifthsectioncorporate__section[data-emergence=visible] .blockfifthsectioncorporate__svg--stats--three .circle {
+    stroke: #097bc2;
+    fill: none;
+    stroke-width: 3.2;
+    stroke-linecap: round;
+    -webkit-animation: progress 3s ease-out forwards;
+    animation: progress 3s ease-out forwards;
+}
+
+@-webkit-keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.blockfifthsectioncorporate__section--stats--two svg path {
+    stroke: #FFCD69 !important;
+}
+
+.blockfifthsectioncorporate__section--stats--three svg path {
+    stroke: #21CE9D !important;
+}
+
+.blockfifthsectioncorporate__div--stats {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.blockfifthsectioncorporate__div--stats img {
+    width: 195px;
+    height: 195px;
+    max-width: 195px;
+}
+
+.blockfifthsectioncorporate__svg--stats--one, .blockfifthsectioncorporate__svg--stats--two, .blockfifthsectioncorporate__svg--stats--three {
+    position: absolute;
+    top: -7px;
+    left: -7px;
+}
+
+.blockfifthsectioncorporate__p--percentage {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.7rem;
+    line-height: 4.8rem;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blockfifthsectioncorporate__section--stats .blockfifthsectioncorporate__p--percentage span {
+    font-size: 3.5rem;
+    display: block;
+}
+
+.blockfifthsectioncorporate__section--stats .blockfifthsectioncorporate__p--percentage.perc span {
+    font-size: 3.5rem;
+    display: inline;
+}
+
+.blockfifthsectioncorporate__section--stats--two {
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.blockfifthsectioncorporate__div--tested {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 3.2rem;
+    background: #f3fafe;
+    border-radius: 5px;
+    gap: 1.6rem;
+    height: 4.4rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.blockfifthsectioncorporate__div--tested--medium {
+    display: none;
+}
+
+.blockfifthsectioncorporate__p--tested {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #707070;
     margin-top: 0;
     margin-bottom: 0;
 }
 
-.main__h1 {
-    font-family: 'Poppins', 'sans-serif';
-    color: black;
-    font-size: 5.4rem;
-    line-height: 6.4rem;
-    max-width: 73.8rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: calc(100% - 4.8rem);
-    text-align: center;
+.blockfifthsectioncorporate__section--stats--four {
+    margin-top: 4.5rem;
 }
 
-.main__p {
-    max-width: 67rem;
-    margin-left: auto;
-    margin-right: auto;
-    width: calc(100% - 4.8rem);
-    text-align: center;
-    font-size: 2rem;
-    line-height: 2.2rem;
-    margin-top: 4rem;
+.blockfifthsectioncorporate__p--dollar--sign {
+    left: 38%;
+    font-size: 5.5rem;
 }
 
-.main__a {
-    background: var(--color-orange);
-    color: white;
-    text-decoration: none;
-    width: 25rem;
+.blockfifthsectioncorporate__section--wrapper, .blockfourthsectioncorporate__div--one {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+}
+
+/* Sixth Section - Check Coverage */
+.blocksixthsectionstnebraska__section {
+    text-align: center;
+    padding: 0 3rem 3rem 3rem;
+}
+
+.blocksixthsectionstnebraska__section h2 {
+    font-size: 4.8rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.blocksixthsectionstnebraska__section--inner {
+    max-width: 106.7rem;
+    margin: 0 auto;
+}
+
+.blocksixthsectionstnebraska__a {
+    background: #f37500;
+    border-radius: 15.4rem;
+    width: 24.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     height: 6.9rem;
-    border-radius: 15rem;
-    margin-top: 4rem;
+    color: #fff;
+    font-weight: 600;
     font-size: 2.2rem;
-    font-family: 'Montserrat', 'sans-serif';
+    line-height: 2.2rem;
+    text-decoration: none;
+    margin: 3.5rem auto 0;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(12, 153, 241, 0.25);
+}
+
+.blocksixthsectionstnebraska__a:hover {
+    background: #D66801;
+}
+
+.blocksixthsectionstnebraska__section a:focus, .blocksixthsectionstnebraska__section a:active, .blocksixthsectionstnebraska__section a:hover, .blocksixthsectionstnebraska__section a:visited {
+    color: #fff;
+}
+
+/* Seventh Section - Blue frame 1 */
+.blockseventhsectionstnebraska__section {
+    background: linear-gradient(180deg, #0059C5 0%, #012B60 174.11%), #E6F7FF;
+    clip-path: polygon(100% 100%, 0% 100%, 0% 3.37%, 2% 3.57%, 4% 3.76%, 6% 3.95%, 8% 4.12%, 10% 4.28%, 12% 4.43%, 14% 4.55%, 16% 4.66%, 18% 4.75%, 20% 4.81%, 22% 4.86%, 24% 4.88%, 26% 4.87%, 28% 4.85%, 30% 4.8%, 32% 4.72%, 34% 4.63%, 36% 4.52%, 38% 4.38%, 40% 4.23%, 42% 4.07%, 44% 3.89%, 46% 3.7%, 48% 3.51%, 50% 3.3%, 52% 3.1%, 54% 2.89%, 56% 2.69%, 58% 2.49%, 60% 2.29%, 62% 2.11%, 64% 1.94%, 66% 1.78%, 68% 1.64%, 70% 1.52%, 72% 1.41%, 74% 1.33%, 76% 1.27%, 78% 1.23%, 80% 1.22%, 82% 1.23%, 84% 1.26%, 86% 1.32%, 88% 1.39%, 90% 1.49%, 92% 1.61%, 94% 1.75%, 96% 1.9%, 98% 2.07%, 100% 2.25%);
+    position: relative;
+    padding: 7rem 3rem;
+    z-index: 1;
+}
+
+.blockseventhsectionstnebraska__section a:focus, .blockseventhsectionstnebraska__section a:active, .blockseventhsectionstnebraska__section a:hover, .blockseventhsectionstnebraska__section a:visited {
+    color: #fff;
+}
+
+.blockseventhsectionstnebraska__section h2 {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 5.7rem;
+    text-align: center;
+    color: #fff;
+    max-width: 66.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15rem;
+    padding-bottom: 1rem;
+}
+
+.blockseventhsectionstnebraska__section .wrapper {
+    gap: 9rem;
+    align-items: center;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.blockseventhsectionstnebraska__section .wrapper p {
+    font-size: 2rem;
+}
+
+.blockseventhsectionstnebraska__section .wrapper h3 {
+    font-size: 3.5rem;
+}
+
+.blockseventhsectionstnebraska__div--one {
+    max-width: 48rem;
+    color: #fff;
+}
+
+.blockseventhsectionstnebraska__div--two.has_shape {
+    position: relative;
+}
+
+.blockseventhsectionstnebraska__div--two .is_shape {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+
+.blockseventhsectionstnebraska__section .illustrative {
+    position: relative;
+    z-index: 1;
+}
+
+.blockseventhsectionstnebraska__img--blue--dotted {
+    position: absolute;
+    right: 25%;
+    top: 31%;
+    z-index: -1;
+}
+
+.blockseventhsectionstnebraska__img--blue--dotted--mobile {
+    position: absolute;
+    right: 25%;
+    top: 31%;
+    z-index: -1;
+    display: none;
+}
+
+/* Blue frame 2 */
+.first-video .iframe-container {
+    position: relative;
+    max-width: 92rem;
+    width: calc(100% - 4.8rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.first-video .iframe-container div {
+    margin-bottom: 13rem;
+}
+
+.first-video .blockfirstsectionparents__div--iframe--container1 {
+    padding: 57.15% 0 0 0;
+    position: relative;
+}
+
+.first-video .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    border: 0.3rem solid #0c99f1;
+    background: #0c99f1;
+}
+
+.blockseventhsectionstnebraska__h3--boxes {
+    font-size: 3.6rem;
+    color: #000;
+    text-align: center;
+    margin-top: 11rem;
+    margin-bottom: 2.7rem;
+}
+
+.steps .boxes {
+    display: flex;
+    max-width: 108rem;
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.steps .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 60px;
+    padding: 1.9rem;
+    color: #fff;
+    text-align: center;
+    width: 33.3333%;
+    margin: 0 auto;
+}
+
+.steps .box .text {
+    color: #000;
+    text-align: center;
+    line-height: 3.6rem;
+}
+
+.steps .box-one {
+    border: 2px solid #85CCF8;
+}
+
+.steps .box-two {
+    border: 2px solid #21CE9D;
+}
+
+.steps .box-three {
+    border: 2px solid #FECB36;
+}
+
+.steps .box h4 {
+    margin: 2.3rem 0;
+    font-size: 2.4rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.steps .box p:not(.number) {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.steps .number {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 6rem;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 9.9rem;
+    height: 9.9rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 9.9rem;
+}
+
+.steps .number.one {
+    background-color: #85CCF8;
+}
+
+.steps .number.two {
+    background-color: #21CE9D;
+}
+
+.steps .number.three {
+    background-color: #FECB36;
+}
+
+.blockseventhsectionstnebraska__a {
+    background: #f37500;
+    border-radius: 15.4rem;
+    width: 24.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 6.9rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+    text-decoration: none;
+    margin: 5rem auto 0;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(12, 153, 241, 0.25);
+}
+
+.blockseventhsectionstnebraska__a:hover {
+    background: #D66801;
+}
+
+/* Eighth Section - Testimonials */
+.blockfirstsectionparents__section {
+    background: #fff;
+    padding-bottom: 4.5rem;
+}
+
+.blockfirstsectionparents__h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 5.8rem;
+    text-align: center;
+    color: #333;
+    padding-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+.iframe-container {
+    position: relative;
+    max-width: 92rem;
+    width: calc(100% - 4.8rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iframe-container div {
+    margin-bottom: 4rem;
+}
+
+.blockfirstsectionparents__div--iframe--container {
+    padding: 57.15% 0 0 0;
+    position: relative;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3rem;
+    border: 0.2rem solid #0c99f1;
+    border-bottom: 0.6rem solid #0c99f1;
+    background: #0c99f1;
+}
+
+.blockfirstsectionparents__img--boy {
+    width: 51.6rem;
+    z-index: 1;
+    position: relative;
+}
+
+.blockfirstsectionparents__img--blue--shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 34rem;
+    pointer-events: none;
+}
+
+.blockfirstsectionparents__div--thumbnails--wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 5rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.blockfirstsectionparents__a--thumbnail--first.pressed .blockfirstsectionparents__img--thumbnail, .blockfirstsectionparents__a--thumbnail--second.pressed .blockfirstsectionparents__img--thumbnail, .blockfirstsectionparents__a--thumbnail--third.pressed .blockfirstsectionparents__img--thumbnail {
+    margin-top: 0.6rem;
+    border-bottom: 0.2rem solid #0c99f1;
+}
+
+.blockfirstsectionparents__a--thumbnail--first.pressed .blockfirstsectionparents__img--play--button, .blockfirstsectionparents__a--thumbnail--second.pressed .blockfirstsectionparents__img--play--button, .blockfirstsectionparents__a--thumbnail--third.pressed .blockfirstsectionparents__img--play--button {
+    display: none;
+}
+
+.blockfirstsectionparents__a--thumbnail--first.pressed .blockfirstsectionparents__img--play--button--pressed, .blockfirstsectionparents__a--thumbnail--second.pressed .blockfirstsectionparents__img--play--button--pressed, .blockfirstsectionparents__a--thumbnail--third.pressed .blockfirstsectionparents__img--play--button--pressed {
+    display: block;
+}
+
+.blockfirstsectionparents__a--thumbnail {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    margin: 0;
+    padding-bottom: 0;
+    border-radius: 1rem;
+    width: 20rem;
+    outline: none;
+}
+
+.blockfirstsectionparents__a--thumbnail:hover .blockfirstsectionparents__img--play--button {
+    display: none;
+}
+
+.blockfirstsectionparents__a--thumbnail:hover .blockfirstsectionparents__img--play--button--pressed {
+    display: block;
+}
+
+.blockfirstsectionparents__a--thumbnail:hover .blockfirstsectionparents__img--thumbnail {
+    -webkit-animation: hoverAnimationThumbnail 0.3s forwards;
+    animation: hoverAnimationThumbnail 0.3s forwards;
+}
+
+@-webkit-keyframes hoverAnimationThumbnail {
+    100% {
+        margin-top: 0.6rem;
+        border-bottom: 0.2rem solid #0c99f1;
+    }
+}
+
+@keyframes hoverAnimationThumbnail {
+    100% {
+        margin-top: 0.6rem;
+        border-bottom: 0.2rem solid #0c99f1;
+    }
+}
+
+.blockfirstsectionparents__p--names {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    text-align: center;
+    margin-top: 15.5rem;
+    margin-bottom: 0;
+}
+
+.blockfirstsectionparents__img--thumbnail {
+    border-radius: 1rem;
+    border: 0.2rem solid #0c99f1;
+    border-bottom: 0.6rem solid #0c99f1;
+    margin-top: 0;
+    width: 20rem;
+    position: absolute;
+}
+
+.blockfirstsectionparents__img--play--button--pressed {
+    display: none;
+}
+
+.blockfirstsectionparents__div--play--wrapper {
+    position: absolute;
+    width: 100%;
+    height: 12rem;
+}
+
+.blockfirstsectionparents__div--play--wrapper img {
+    width: 7rem;
+    position: absolute;
+    right: -1.4rem;
+    bottom: -2.8rem;
+}
+
+.blockfirstsectionparents__div--iframe--container {
+    padding: 57.15% 0 0 0;
+    position: relative;
+}
+
+.blockfirstsectionparents__img--left--blue--shape {
+    position: absolute;
+    top: 0;
+    height: 40rem;
+}
+
+.blockfirstsectionparents__div--wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 4rem;
+    padding-top: 7.2rem;
+}
+
+.blockfirstsectionparents__a {
+    color: #fff;
+}
+
+.blockfirstsectionparents__a:hover {
+    color: #fff;
+}
+
+.blockfirstsectionparents__p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3.4rem;
+    color: #fff;
+}
+
+.blockfirstsectionparents__img--left--blue--pattern {
+    position: absolute;
+    width: 15rem;
+    bottom: 4rem;
+    right: 10%;
+}
+
+/* Ninth Section - Big feelings */
+.blockninthsectionstnebraska__section {
+    text-align: center;
+    padding: 0 7rem 19rem 7rem;
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+}
+
+.blockninthsectionstnebraska__section img {
+    z-index: 4;
+    position: absolute;
+}
+
+.blockninthsectionstnebraska__img--blue--shape--1 {
+    left: -25%;
+}
+
+.blockninthsectionstnebraska__img--blue--shape--2 {
+    right: -25%;
+}
+
+.blockninthsectionstnebraska__img--blue--shape--3 {
+    right: 0;
+}
+
+.blockninthsectionstnebraska__section h2 {
+    font-size: 3.6rem;
+}
+
+.blockninthsectionstnebraska__section p {
+    font-size: 2.4rem;
+}
+
+.blockninthsectionstnebraska__section--inner {
+    max-width: 76rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+.blockninthsectionstnebraska__a {
+    background: #f37500;
+    border-radius: 15.4rem;
+    width: 24.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 6.9rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    text-decoration: none;
+    margin: 5rem auto 0;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(12, 153, 241, 0.25);
+}
+
+.blockninthsectionstnebraska__a:hover {
+    background: #D66801;
+}
+
+.blockninthsectionstnebraska__section a:focus, .blockninthsectionstnebraska__section a:active, .blockninthsectionstnebraska__section a:hover, .blockninthsectionstnebraska__section a:visited {
+    color: #fff;
+}
+
+/*************************
+ Mobile
+ **************************/
+/* First Block - Banner with girl */
+@media screen and (min-width: 2240px) {
+    .blockfirstsectioncorporate__img--blue {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .blockfirstsectioncorporate__div--inner--one {
+        max-width: 60.7rem;
+    }
+
+    .blockfirstsectioncorporate__h1 {
+        font-size: 4.8rem;
+        line-height: 5.4rem;
+    }
+
+    .blockfirstsectioncorporate__h2 {
+        font-size: 2rem;
+        line-height: 3.4rem;
+        max-width: 38.6rem;
+    }
+
+    .blockfirstsectioncorporate__img--blue--medium {
+        display: block;
+        position: absolute;
+        top: 5rem;
+        left: -4rem;
+    }
+
+    .blockfirstsectioncorporate__img--blue {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blockfirstsectioncorporate__section {
+        height: 64rem;
+    }
+
+    .blockfirstsectioncorporate__section--inner {
+        min-height: unset;
+        margin-top: 14rem;
+        margin-bottom: 6.9rem;
+    }
+
+    .blockfirstsectioncorporate__img--boy {
+        bottom: -10.9rem;
+        width: 59rem;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .blockfirstsectioncorporate__img--boy {
+        top: 15rem;
+        width: 40rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .main__h1 {
-        font-size: 3rem;
-        line-height: 4rem;
-        max-width: 40rem;
+    .blockfirstsectioncorporate__img--blue--medium {
+        display: none;
     }
 
-    .main__p {
-        font-size: 1.8rem;
-        line-height: 2rem;
+    .blockfirstsectioncorporate__img--blue--mobile {
+        display: block;
+        position: absolute;
+        top: -3.6rem;
     }
 
-    .main__a {
-        font-size: 1.8rem;
+    .blockfirstsectioncorporate__h1 {
+        font-size: 4.8rem;
+        line-height: 5.4rem;
+    }
+
+    .blockfirstsectioncorporate__h2 {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .blockfirstsectioncorporate__section {
+        height: 50rem;
+    }
+
+    .blockfirstsectioncorporate__section--inner {
+        margin-top: 3rem;
+    }
+
+    .blockfirstsectioncorporate__img--boy {
+        width: 27rem;
+        top: 23rem;
+    }
+}
+
+@media screen and (max-width: 635px) {
+    .blockfirstsectioncorporate__h1 {
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .blockfirstsectioncorporate__img--boy {
+        width: 29rem;
+        top: 21rem;
+    }
+
+    .blockfirstsectioncorporate__img--blue--mobile {
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .blockfirstsectioncorporate__img--boy {
+        top: 26.5rem;
+    }
+
+    .blockfirstsectioncorporate__section {
+        height: 55rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .blockfirstsectioncorporate__section--inner {
+        margin: 0;
+        padding: 3rem 4rem;
+        width: 100%;
+    }
+
+    .blockfirstsectioncorporate__h1 {
+        font-size: 2.8rem;
+        line-height: 3.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .blockfirstsectioncorporate__h2 {
+        font-size: 1.6rem;
+        width: 24rem;
+    }
+
+    .blockfirstsectioncorporate__section {
+        height: 55rem;
+    }
+
+    .blockfirstsectioncorporate__img--boy {
+        top: 30rem;
+        width: 29rem;
+        right: 0;
+    }
+
+    .blockfirstsectioncorporate__img--blue--mobile {
+        top: 3.5rem;
+    }
+
+    .blockfirstsectioncorporate__div--inner--one {
+        max-width: 51.3rem;
+    }
+
+    .blockfirstsectioncorporate__a {
+        margin-top: 1.6rem;
+    }
+}
+
+/* Second Section - Cicle therapeutic programs */
+@media screen and (max-width: 1200px) {
+    .blocktwelvethsectionhome__h2, .blocktenthsectionhome__h2, .blockninethsectionhome__h2, .blockthirdsectionhome__h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        text-align: center;
+        color: #333;
+        max-width: 68rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blockthirdsectionhome__section--inner--vertical {
+        display: block;
+        position: relative;
+    }
+
+    .blockthirdsectionhome__img--ring--vertical {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .blockthirdsectionhome__section--inner {
+        display: none;
+    }
+
+    .blockthirdsectionhome__p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 3.4rem;
+    }
+
+    .blockthirdsectionhome__div--emotions--wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin-left: auto;
+        position: absolute;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 3rem;
+        gap: 7rem;
+    }
+
+    .blockthirdsectionhome__div--one--vertical, .blockthirdsectionhome__div--two--vertical {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        gap: 4.7rem;
+    }
+
+    .blockthirdsectionhome__section {
+        margin-top: 0;
+    }
+
+    .blockfifteenthsectionhome__h2, .blocktwelvethsectionhome__h2, .blocktenthsectionhome__h2, .blockninethsectionhome__h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 3.9rem;
+        text-align: center;
+        width: calc(100% - 4.8rem);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blockthirdsectionhome__h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 3.9rem;
+        text-align: center;
+        width: calc(100% - 4.8rem);
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 57rem;
+    }
+}
+
+@media screen and (max-width: 524px) {
+    .blockfifteenthsectionhome__h2, .blocktwelvethsectionhome__h2, .blocktenthsectionhome__h2, .blockninethsectionhome__h2, .blockthirdsectionhome__h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 3.2rem;
+    }
+}
+
+/* Third Section - Boston / Harvard */
+@media screen and (max-width: 2200px) {
+    .blockfourthsectionhome__img--main {
+        display: none;
+    }
+
+    .blockfourthsectionhome__img--main--medium {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .blockfourthsectionhome__img--main--medium {
+        display: block;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .blockfourthsectionhomenew__img--parent--app {
+        display: none;
+    }
+
+    .blockfourthsectionhomenew__img--parent--app--medium {
+        display: block;
+    }
+
+    .blockfourthsectionhomenew__div {
+        min-height: 31rem;
+        width: 52%;
+    }
+
+    .blockfourthsectionhomenew__img--blue--dots {
+        display: none;
+    }
+
+    .blockfourthsectionhomenew__section--inner {
+        min-height: 42rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .blockfourthsectionhome__p {
+        font-family: "Fredoka", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 4rem;
+        line-height: 4.8rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .blocksecondsectionquesreport__img--yellow--shape, .blockfirstsectionquesreport__img, .blockfourthsectionplanstwo__img--green--shape {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blockfourthsectionhome__p {
+        font-size: 3.6rem;
+        line-height: 4.2rem;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .blocktenthsectionnewhometwo__div .blockfourthsectionhome__a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blockfourthsectionhome__img--main--medium, .blockthirteenthsectionhome__img--blue--shape--left, .blockthirteenthsectionhome__div--tablet--img--wrapper, .blockthirdsectionhome__blue_shape_1 {
+        display: none;
+    }
+
+    .blockfourthsectionhome__img--main--small {
+        display: block;
+        position: absolute;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blockfourthsectionhome__div {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: unset;
+        background: transparent;
+        gap: 1rem;
+    }
+
+    .blockfourthsectionhome__img--harvard {
+        width: unset;
+        margin-left: auto;
+        margin-right: auto;
+        order: 0;
+    }
+
+    .blockfourthsectionhome__img--boston {
+        width: unset;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5rem;
+        order: 1;
+    }
+
+    .blockfourthsectionhome__a.blocksixthsectionhome__a {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blockfourthsectionhome__img--main--small {
+        display: none;
+    }
+
+    .blockfourthsectionhome__img--main--extrasmall {
+        display: block;
+    }
+
+    .blockfourthsectionhome__p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 3.9rem;
+        text-align: center;
+        width: calc(100% - 4.8rem);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Fourth Section - Three images middle */
+@media screen and (max-width: 980px) {
+    .blockfourthsectionstnebraska__section .wrapper {
+        gap: 4rem;
+        margin-bottom: 6rem;
+    }
+
+    .blockfourthsectionstnebraska__img--gray--dotted--mobile {
+        display: block;
+        left: -25%;
+        top: 25%;
+    }
+
+    .blockfourthsectionstnebraska__img--gray--dotted {
+        display: none;
+    }
+
+    .blockfourthsectionstnebraska__section h3 {
+        font-size: 2.4rem;
+        line-height: normal;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .blockfourthsectionstnebraska__img--gray--dotted--mobile {
+        display: block;
+        left: 21%;
+        top: 23%;
+    }
+
+    .blockfourthsectionstnebraska__section .wrapper p {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+    }
+}
+
+/* Fifth Section - Percentages */
+@media screen and (max-width: 979px) {
+    .blockfourthsectioncorporate__section--outter {
+        padding: 2rem 0;
+    }
+
+    .blockfifthsectioncorporate__section--wrapper, .blockfourthsectioncorporate__div--one {
+        flex-direction: column;
+    }
+
+    .blockfourthsectionstnebraska__section .wrapper {
+        flex-direction: column;
+    }
+
+    .blockfourthsectionstnebraska__section .wrapper:nth-of-type(2) .blockfourthsectionstnebraska__div--one {
+        order: 1;
+    }
+
+    .blockfifthsectioncorporate__section {
+        margin-bottom: 7rem;
+    }
+}
+
+/* Sixth Section - Check Coverage */
+@media screen and (max-width: 590px) {
+    .blocksixthsectionstnebraska__section h2 {
+        font-size: 3.6rem;
+    }
+}
+
+/* Seventh Section - Blue frame 1 */
+@media screen and (max-width: 979px) {
+    .blockseventhsectionstnebraska__section .wrapper {
+        flex-direction: column;
+    }
+
+    .blockseventhsectionstnebraska__section .wrapper:nth-of-type(3) .blockseventhsectionstnebraska__div--one {
+        order: 0;
+    }
+
+    .blockseventhsectionstnebraska__section .wrapper:nth-of-type(3) .blockseventhsectionstnebraska__div--two {
+        order: 1;
+    }
+
+    .blockseventhsectionstnebraska__div--two .is_shape {
+        display: none;
+    }
+
+    .first-video .iframe-container div {
+        margin-bottom: 7rem !important;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .blockseventhsectionstnebraska__section h2 {
+        font-weight: 700;
+        font-size: 2.4rem;
+        line-height: 3.8rem;
+    }
+
+    .blockseventhsectionstnebraska__section .wrapper h3 {
+        font-size: 2.6rem;
+    }
+
+    .blockseventhsectionstnebraska__section .wrapper p {
+        font-size: 1.6rem;
+    }
+
+    .first-video .iframe-container div {
+        margin-bottom: 0 !important;
+    }
+
+    .blockseventhsectionstnebraska__section .wrapper {
+        gap: 6rem;
+    }
+
+    .blockseventhsectionstnebraska__section .wrapper:last-child {
+        margin-bottom: 6rem;
+    }
+
+    .first-video .iframe-container {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+}
+
+/* Blue frame 2 */
+@media screen and (max-width: 979px) {
+    .steps .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .steps .box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .steps .box {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .steps .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .steps .box {
+        width: 100%;
+        padding: 3.5rem;
+    }
+
+    .blockseventhsectionstnebraska__h3--boxes {
+        margin-top: 6rem;
+    }
+}
+
+/* Eighth Section - Testimonials */
+@media screen and (max-width: 768px) {
+    .blockfirstsectionparents__h1 {
+        max-width: 20rem;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.2rem;
+        line-height: 3.9rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+
+    .blockfirstsectionparents__p--names {
+        margin-top: 12rem;
+    }
+
+    .iframe-container {
+        width: 56rem;
+    }
+
+    .blockfirstsectionparents__div--iframe--container {
+        padding: 57.3% 0 0 0;
+    }
+
+    .blockfirstsectionparents__img--blue--shape {
+        display: none;
+    }
+
+    .blockfirstsectionparents__a--thumbnail {
+        width: 15rem;
+    }
+
+    .blockfirstsectionparents__div--play--wrapper {
+        height: 8rem;
+    }
+
+    .blockfirstsectionparents__div--play--wrapper img {
+        width: 3.4rem;
+    }
+
+    .blockfourthsectionparents__p--description--improvement {
+        max-width: 28.8rem;
+    }
+
+    .blockfirstsectionparents__h1 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 3.3rem;
+        line-height: 4.8rem;
+        text-align: center;
+    }
+
+    .blockfirstsectionparents__p {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        text-align: center;
+    }
+
+    .blockfirstsectionparents__div--wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .blockfirstsectionparents__img--boy {
+        width: 22.8rem;
+    }
+
+    .blockfirstsectionparents__div--wrapper--text {
+        margin-left: auto;
+        margin-right: auto;
+        width: calc(100% - 4.8rem);
+    }
+
+    .blocksecondsectionparents__inner--section {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .blockfirstsectionparents__h2 {
+        font-size: 2.4rem;
+        text-align: center;
+        padding-top: 0;
+        max-width: 25rem;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: normal;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .blockfirstsectionparents__a--thumbnail {
+        width: 10rem;
+    }
+
+    .blockfirstsectionparents__div--play--wrapper {
+        height: 5.4rem;
+    }
+
+    .blockfirstsectionparents__p--names {
+        width: 10rem;
+    }
+
+    .iframe-container {
+        width: 40rem;
+    }
+
+    .blockfirstsectionparents__p--names {
+        margin-top: 9.2rem;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        text-align: center;
+    }
+
+    .blockfirstsectionparents__div--iframe--container {
+        padding: 23rem 0 0 0;
     }
 }
 
 @media screen and (max-width: 490px) {
-    .main__div {
-        flex-direction: column;
+    .blockfirstsectionparents__div--thumbnails--wrapper {
+        gap: 2.5rem;
     }
-    .main__header{
-        justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
+
+    .iframe-container {
+        width: 35rem;
+    }
+
+    .blockfirstsectionparents__div--iframe--container {
+        padding: unset;
+        height: 20rem;
+    }
+
+    .iframe-container div:not(.blockfirstsectionparents__div--iframe--container) {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 413px) {
+    .blockfirstsectionparents__p--names, .blockfirstsectionparents__a--thumbnail {
+        width: 8rem;
+    }
+
+    .blockfirstsectionparents__p--names {
+        margin-top: 7.4rem;
+    }
+
+    .iframe-container {
+        width: 30rem;
+    }
+
+    .blockfirstsectionparents__div--iframe--container {
+        height: 17.45rem;
+    }
+
+    .blockfirstsectionparents__div--thumbnails--wrapper {
+        gap: 2.2rem;
+    }
+
+    .blockfirstsectionparents__div--play--wrapper {
+        height: 4rem;
+    }
+
+    .blockfirstsectionparents__div--play--wrapper img {
+        width: 2.5rem;
+    }
+}
+
+/* Ninth Section - Big feelings */
+@media screen and (max-width: 1279px) {
+    .blockninthsectionstnebraska__img--blue--shape--2 {
+        right: -36%;
+        top: -7%;
+    }
+
+    .blockninthsectionstnebraska__img--blue--shape--1 {
+        top: 16%;
+        left: -35%;
+    }
+}
+
+@media screen and (max-width: 979px) {
+    .blockninthsectionstnebraska__section {
+        padding-bottom: 3rem;
+        min-height: 58rem;
+    }
+
+    .blockninthsectionstnebraska__img--blue--shape--3 {
+        display: none;
+    }
+
+    .blockninthsectionstnebraska__section img {
+        width: 65%;
+    }
+
+    .blockninthsectionstnebraska__img--blue--shape--2 {
+        bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blockninthsectionstnebraska__img--blue--shape--2 {
+        right: -36%;
+        top: 13%;
+        transform: rotateZ(313deg);
+    }
+
+    .blockninthsectionstnebraska__img--blue--shape--1 {
+        bottom: 0;
+        transform: rotate(45deg);
+        left: -50%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .blockninthsectionstnebraska__section {
+        min-height: 51rem;
     }
 }
