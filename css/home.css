@@ -2,8 +2,45 @@
  Desktop
  **************************/
 html {
-    font-size: 62.5%;
     font-family: 'Poppins', 'sans-serif';
+}
+
+.main__header--outter {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 4.8rem);
+}
+
+.main__header {
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main__a.main__a--top {
+    width: 16rem;
+    border-radius: 9.7rem;
+    background: #F37500;
+    box-shadow: 0 2.607px 2.607px 0px rgba(12, 153, 241, 0.25);
+    color: white;
+    text-decoration: none;
+    display: flex;
+    height: 4.4rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main__a.main__a--top:visited,
+.main__a.main__a--top:focus {
+    color: white;
+    text-decoration: none;
 }
 
 strong {
@@ -39,12 +76,22 @@ strong {
     background-color: #D66801;
 }
 
+.blockfirstsectionbh__section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.8rem;
+    gap: 1rem;
+}
+
 /* First Block - Banner with girl */
 .blockfirstsectioncorporate__section {
     background: #E6F7FF;
-    margin-top: 7rem;
     padding-top: 1rem;
     position: relative;
+}
+
+.blockfirstsectioncorporate__img--boy {
+    width: 100%;
 }
 
 .blockfirstsectioncorporate__img--blue {
@@ -76,13 +123,12 @@ strong {
     min-height: 69.4rem;
 }
 
-.blockfirstsectioncorporate__div--inner--one {
-    max-width: 51.3rem;
-    z-index: 1;
+.blockfirstsectioncorporate__div--inner--one,
+.blockfirstsectioncorporate__div--inner--two {
+    flex-basis: 100%;
 }
 
 .blockfirstsectioncorporate__h1 {
-    font-family: "Poppins", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 5.4rem;
@@ -199,14 +245,6 @@ strong {
     pointer-events: none;
     top: 0;
     height: 100%;
-}
-
-.blockfirstsectioncorporate__img--boy {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 70rem;
-    z-index: 0;
 }
 
 /* Second Section - Cicle therapeutic programs */
@@ -444,6 +482,10 @@ strong {
     margin-left: 0;
 }
 
+.blocksixthsectionhome__img{
+    width: 100%;
+}
+
 .blockfourthsectionhome__p {
     font-family: "Fredoka", sans-serif;
     font-style: normal;
@@ -561,7 +603,6 @@ strong {
 .blockfifthsectioncorporate__section--wrapper {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
-    margin-top: 14rem;
 }
 
 .blockfifthsectioncorporate__h2 {
@@ -908,6 +949,9 @@ strong {
     text-align: center;
     margin-top: 11rem;
     margin-bottom: 2.7rem;
+    width: calc(100% - 4.8rem);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .steps .boxes {
@@ -918,16 +962,21 @@ strong {
     margin-right: auto;
 }
 
+.steps .boxes .text{
+    padding: 0 2rem;
+}
+
 .steps .box {
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 60px;
-    padding: 1.9rem;
+    padding: 3rem 0;
     color: #fff;
     text-align: center;
-    width: 33.3333%;
+    width: calc(100% - 4.8rem);
     margin: 0 auto;
+    max-width: 50rem;
 }
 
 .steps .box .text {
@@ -1160,7 +1209,7 @@ strong {
     border: 0.2rem solid #0c99f1;
     border-bottom: 0.6rem solid #0c99f1;
     margin-top: 0;
-    width: 20rem;
+    width: 100%;
     position: absolute;
 }
 
@@ -1239,6 +1288,7 @@ strong {
     max-width: 63rem;
     margin-left: auto;
     margin-right: auto;
+    width: calc(100% - 4.8rem)
 }
 
 /* Ninth Section - Big feelings */
@@ -1259,7 +1309,7 @@ strong {
 
 .blockninthsectionstnebraska__img--blue--shape--2 {
     right: 0;
-    bottom: 0;
+    bottom: -6rem;
     position: absolute;
     height: 100%;
 }
@@ -1316,6 +1366,30 @@ strong {
     color: #fff;
 }
 
+.site-footer {
+    background: #012B60;
+}
+
+.blockfootersection__section {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 120rem;
+    width: calc(100% - 4.8rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5.8rem;
+    padding-bottom: 5.8rem;
+}
+
+.blockfootersection__p--one {
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+
 /*************************
  Mobile
  **************************/
@@ -1355,30 +1429,39 @@ strong {
 }
 
 @media screen and (max-width: 1024px) {
-    .blockfirstsectioncorporate__section {
-        height: 64rem;
-    }
-
     .blockfirstsectioncorporate__section--inner {
-        min-height: unset;
         margin-top: 14rem;
         margin-bottom: 6.9rem;
-    }
-
-    .blockfirstsectioncorporate__img--boy {
-        bottom: -10.9rem;
-        width: 59rem;
-    }
-}
-
-@media screen and (max-width: 979px) {
-    .blockfirstsectioncorporate__img--boy {
-        top: 15rem;
-        width: 40rem;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .blockthirdsectionhome__section{
+        padding: 0;
+    }
+
+    .blockthirdsectionbh__h2{
+        font-size: 3.6rem;
+        width: calc(100% - 4.8rem);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blockfirstsectionbh__section,
+    .blockfirstsectioncorporate__section--inner {
+        flex-direction: column;
+    }
+
+    .blockfirstsectioncorporate__section--inner {
+        width: calc(100% - 4.8rem);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .blockfirstsectionbh__section {
+        align-items: flex-start;
+    }
+
     .blockfirstsectioncorporate__img--blue--medium {
         display: none;
     }
@@ -1399,17 +1482,8 @@ strong {
         line-height: 2.2rem;
     }
 
-    .blockfirstsectioncorporate__section {
-        height: 50rem;
-    }
-
     .blockfirstsectioncorporate__section--inner {
         margin-top: 3rem;
-    }
-
-    .blockfirstsectioncorporate__img--boy {
-        width: 27rem;
-        top: 23rem;
     }
 }
 
@@ -1421,33 +1495,12 @@ strong {
 }
 
 @media screen and (max-width: 590px) {
-    .blockfirstsectioncorporate__img--boy {
-        width: 29rem;
-        top: 21rem;
-    }
-
     .blockfirstsectioncorporate__img--blue--mobile {
         top: 0;
     }
 }
 
-@media screen and (max-width: 524px) {
-    .blockfirstsectioncorporate__img--boy {
-        top: 26.5rem;
-    }
-
-    .blockfirstsectioncorporate__section {
-        height: 55rem;
-    }
-}
-
 @media screen and (max-width: 420px) {
-    .blockfirstsectioncorporate__section--inner {
-        margin: 0;
-        padding: 3rem 4rem;
-        width: 100%;
-    }
-
     .blockfirstsectioncorporate__h1 {
         font-size: 2.8rem;
         line-height: 3.8rem;
@@ -1457,16 +1510,6 @@ strong {
     .blockfirstsectioncorporate__h2 {
         font-size: 1.6rem;
         width: 24rem;
-    }
-
-    .blockfirstsectioncorporate__section {
-        height: 55rem;
-    }
-
-    .blockfirstsectioncorporate__img--boy {
-        top: 30rem;
-        width: 29rem;
-        right: 0;
     }
 
     .blockfirstsectioncorporate__img--blue--mobile {
@@ -1501,6 +1544,19 @@ strong {
     .blockthirdsectionhome__section--inner--vertical {
         display: block;
         position: relative;
+        margin-top: 2rem;
+    }
+
+    .blockseventhsectionstnebraska__h3--boxes{
+        margin-top: 3rem;
+    }
+
+    .blockthirdsectionbh__section{
+        margin-top: 0;
+    }
+
+    .blockfirstsectioncorporate__a {
+        margin-bottom: 1.6rem;
     }
 
     .blockthirdsectionhome__img--ring--vertical {
@@ -1855,29 +1911,9 @@ strong {
         align-items: center;
     }
 
-    .steps .box {
-        width: 50%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .steps .box {
-        width: 75%;
-    }
-}
-
-@media screen and (max-width: 590px) {
-    .steps .box {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 420px) {
-    .steps .box {
-        width: 100%;
-        padding: 3.5rem;
-    }
-
     .blockseventhsectionstnebraska__h3--boxes {
         margin-top: 6rem;
     }
@@ -1971,13 +2007,13 @@ strong {
     }
 
     .blockfirstsectionparents__h2 {
-        font-size: 2.4rem;
         text-align: center;
         padding-top: 0;
         max-width: 25rem;
         margin-left: auto;
         margin-right: auto;
         line-height: normal;
+        margin-top: 3rem;
     }
 }
 
@@ -2029,6 +2065,16 @@ strong {
     .iframe-container div:not(.blockfirstsectionparents__div--iframe--container) {
         margin-bottom: 0;
     }
+
+    .blockfootersection__section{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .blockfootersection__p--one{
+        text-align: center;
+        max-width: 25rem;
+        margin-top: 2rem;
+    }
 }
 
 @media screen and (max-width: 413px) {
@@ -2062,50 +2108,19 @@ strong {
 }
 
 /* Ninth Section - Big feelings */
-@media screen and (max-width: 1279px) {
-    .blockninthsectionstnebraska__img--blue--shape--2 {
-        right: -36%;
-        top: -7%;
-    }
-
-    .blockninthsectionstnebraska__img--blue--shape--1 {
-        top: 16%;
-        left: -35%;
-    }
-}
-
 @media screen and (max-width: 979px) {
     .blockninthsectionstnebraska__section {
         padding-bottom: 3rem;
         min-height: 58rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .blockninthsectionstnebraska__img--blue--shape--3 {
         display: none;
     }
-
-    .blockninthsectionstnebraska__section img {
-        width: 65%;
-    }
-
-    .blockninthsectionstnebraska__img--blue--shape--2 {
-        bottom: 0;
-    }
 }
 
-@media screen and (max-width: 768px) {
-    .blockninthsectionstnebraska__img--blue--shape--2 {
-        right: -36%;
-        top: 13%;
-        transform: rotateZ(313deg);
-    }
-
-    .blockninthsectionstnebraska__img--blue--shape--1 {
-        bottom: 0;
-        transform: rotate(45deg);
-        left: -50%;
-    }
-}
 
 @media screen and (max-width: 420px) {
     .blockninthsectionstnebraska__section {
