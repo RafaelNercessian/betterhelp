@@ -5,6 +5,19 @@ html {
     font-family: 'Poppins', 'sans-serif';
 }
 
+.blocksecondsectionhiw__a {
+    color: #000 !important;
+    text-decoration: none;
+}
+
+.linkemail,
+.linkemail:focus,
+.linkemail:visited,
+.linkemail:hover {
+    color: white !important;
+    text-decoration: none;
+}
+
 .main__header--outter {
     max-width: 120rem;
     margin-left: auto;
@@ -225,7 +238,7 @@ strong {
 }
 
 .blocksecondsectionhiw__h3 {
-    color: #444;
+    color: #000;
     text-align: center;
     font-size: 2.4rem;
     font-style: normal;
@@ -304,7 +317,7 @@ strong {
     font-weight: 400;
     font-size: 2.4rem;
     line-height: 3.6rem;
-    color: #097bc2;
+    color: #0174DF;
     margin-top: 0;
     margin-bottom: 0;
     background: #fff;
@@ -482,7 +495,7 @@ strong {
     margin-left: 0;
 }
 
-.blocksixthsectionhome__img{
+.blocksixthsectionhome__img {
     width: 100%;
 }
 
@@ -952,6 +965,7 @@ strong {
     width: calc(100% - 4.8rem);
     margin-left: auto;
     margin-right: auto;
+    font-weight: bold;
 }
 
 .steps .boxes {
@@ -962,7 +976,7 @@ strong {
     margin-right: auto;
 }
 
-.steps .boxes .text{
+.steps .boxes .text {
     padding: 0 2rem;
 }
 
@@ -1436,16 +1450,16 @@ strong {
 }
 
 @media screen and (max-width: 768px) {
-    .blockthirdsectionhome__section{
+    .blockthirdsectionhome__section {
         padding: 0;
     }
 
     .blockfirstsectionparents__h2,
-    .blockninthsectionbh__h2{
+    .blockninthsectionbh__h2 {
         font-size: 2.4rem;
     }
 
-    .blockthirdsectionbh__h2{
+    .blockthirdsectionbh__h2 {
         font-size: 3.6rem;
         width: calc(100% - 4.8rem);
         margin-left: auto;
@@ -1552,11 +1566,11 @@ strong {
         margin-top: 2rem;
     }
 
-    .blockseventhsectionstnebraska__h3--boxes{
+    .blockseventhsectionstnebraska__h3--boxes {
         margin-top: 3rem;
     }
 
-    .blockthirdsectionbh__section{
+    .blockthirdsectionbh__section {
         margin-top: 0;
     }
 
@@ -1643,11 +1657,20 @@ strong {
 }
 
 @media screen and (max-width: 524px) {
+    .blockseventhsectionstnebraska__h3--boxes,
     .blockfifteenthsectionhome__h2, .blocktwelvethsectionhome__h2, .blocktenthsectionhome__h2, .blockninethsectionhome__h2, .blockthirdsectionhome__h2 {
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 2.4rem;
         line-height: 3.2rem;
+    }
+
+    .blockfourthsectionhome__h3 {
+        margin-bottom: 1rem;
+    }
+
+    .blockseventhsectionstnebraska__h3--boxes{
+        max-width: 26rem;
     }
 }
 
@@ -2058,7 +2081,7 @@ strong {
         gap: 2.5rem;
     }
 
-    .blockninthsectionstnebraska__section p{
+    .blockninthsectionstnebraska__section p {
         font-size: 1.6rem;
     }
 
@@ -2075,23 +2098,25 @@ strong {
         margin-bottom: 0;
     }
 
-    .blockfootersection__section{
+    .blockfootersection__section {
         flex-direction: column-reverse;
         align-items: center;
     }
-    .blockfootersection__p--one{
+
+    .blockfootersection__p--one {
         text-align: center;
         max-width: 25rem;
         margin-top: 2rem;
     }
 
-    .blockfootersection__p--one a{
+    .blockfootersection__p--one a {
         color: white;
         text-decoration: none;
     }
+
     .blockfootersection__p--one a:focus,
     .blockfootersection__p--one a:visited,
-    .blockfootersection__p--one a:hover{
+    .blockfootersection__p--one a:hover {
         color: white;
         text-decoration: none;
     }
