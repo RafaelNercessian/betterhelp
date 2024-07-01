@@ -347,7 +347,7 @@ span.error {
     .form__section--disclaimer div {
         margin-left: auto;
         margin-right: auto;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     .form__h1 {

@@ -1,5 +1,18 @@
+function checkFormIsValid() {
+    if (!!$('#first_name').val() && !!$('#last_name').val() && !!$('#email').val()
+        && !!$('#address').val() && !!$('#city').val() && !!$('#state').val() && !!$('.select2-selection__rendered').text() &&
+        !!$('#zip').val() && !!$('#phone').val() && !!$('#accept').is(':checked')) {
+        $('.form_input--submit').removeClass('disabled');
+        $('.form_input--submit').addClass('active');
+    } else {
+        $('.form_input--submit').addClass('disabled');
+        $('.form_input--submit').removeClass('active');
+    }
+    setTimeout(checkFormIsValid, 1000);
+}
+
+
 $(document).ready(function () {
-    var $submitButton = $('.form_input--submit');
     var anonymized_code = '';
     var institution_id = '';
     //Check if anonymized_code and institution_id came from home
@@ -109,6 +122,8 @@ $(document).ready(function () {
             }
         }
     });
+
+    checkFormIsValid();
 
     $('.form_input--submit').on('click', function (e) {
         e.preventDefault();
