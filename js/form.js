@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    var $submitButton = $('.form_input--submit');
     var anonymized_code = '';
     var institution_id = '';
     //Check if anonymized_code and institution_id came from home
@@ -39,9 +40,6 @@ $(document).ready(function () {
 
     //Form validation
     $('.form__details').validate({
-        onkeyup: false,
-        onfocusout: false,
-        onclick: false,
         rules: {
             first_name: {
                 required: true
@@ -93,6 +91,29 @@ $(document).ready(function () {
             } else {
                 error.insertAfter(element.siblings('label'));
             }
+        },
+        highlight: function (element) {
+            if ($(element).attr('id') === 'state') {
+                $(element).next('.select2-container').find('.select2-selection').addClass('error-input');
+            } else {
+                $(element).addClass('error-input');
+            }
+        },
+        unhighlight: function (element) {
+            if ($(element).attr('id') === 'state') {
+                $(element).next('.select2-container').find('.select2-selection').removeClass('error-input');
+            } else {
+                $(element).removeClass('error-input');
+            }
+        }
+    });
+
+    $('.form__details').on('keyup', 'click', function () {
+        //Check if required fields are there
+        if ($('.form__details').valid()) {
+            $('.form_input--submit').removeClass('disabled').addClass('active');
+        } else {
+            $('.form_input--submit').addClass('disabled').removeClass('active');
         }
     });
 

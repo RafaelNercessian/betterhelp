@@ -94,6 +94,7 @@ label.error {
     padding-top: 7rem;
     padding-bottom: 7rem;
     position: relative;
+    height: 100vh;
 }
 
 .main__div {
@@ -240,7 +241,7 @@ input[type="checkbox"]{
     border: 1px solid red !important;
 }
 
-.error {
+span.error {
     color: red;
     font-weight: bold;
     font-size: 1.2rem;
