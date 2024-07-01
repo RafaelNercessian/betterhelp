@@ -108,22 +108,14 @@ $(document).ready(function () {
         }
     });
 
-    $('.form__details').on('keyup', 'click', function () {
-        //Check if required fields are there
-        if ($('.form__details').valid()) {
-            $('.form_input--submit').removeClass('disabled').addClass('active');
-        } else {
-            $('.form_input--submit').addClass('disabled').removeClass('active');
-        }
-    });
-
-
     $('.form_input--submit').on('click', function (e) {
         e.preventDefault();
         if (!$('.form__details').valid()) {
             return false;
         }
         $('.form').hide();
+        $('.image_blue_shape').hide();
+        $('.image_yellow_shape').hide();
         $('.submission').show();
 
         var data = {
