@@ -39,6 +39,9 @@ $(document).ready(function () {
 
     //Form validation
     $('.form__details').validate({
+        onkeyup: false,
+        onfocusout: false,
+        onclick: false,
         rules: {
             first_name: {
                 required: true
@@ -90,22 +93,9 @@ $(document).ready(function () {
             } else {
                 error.insertAfter(element.siblings('label'));
             }
-        },
-        highlight: function (element) {
-            if ($(element).attr('id') === 'state') {
-                $(element).next('.select2-container').find('.select2-selection').addClass('error-input');
-            } else {
-                $(element).addClass('error-input');
-            }
-        },
-        unhighlight: function (element) {
-            if ($(element).attr('id') === 'state') {
-                $(element).next('.select2-container').find('.select2-selection').removeClass('error-input');
-            } else {
-                $(element).removeClass('error-input');
-            }
         }
     });
+
 
     $('.form_input--submit').on('click', function (e) {
         e.preventDefault();
