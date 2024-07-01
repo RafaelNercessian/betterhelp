@@ -29,7 +29,9 @@ $(document).ready(function () {
         });
     }
 
-    $('#state').select2();
+    $('#state').select2({
+        width: '100%'
+    });
 
     $('#state').on('select2:select', function (e) {
         $(this).valid();

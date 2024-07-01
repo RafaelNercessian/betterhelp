@@ -169,10 +169,17 @@ label.error {
     margin-top: 0;
     margin-bottom: 0;
     max-width: 40rem;
+}
+
+.form__label--checkbox--marketing {
     width: calc(100% - 4.8rem);
 }
 
-input[type="checkbox"]{
+.custom-class-deopdown.select2-dropdown {
+    width: 100% !important;
+}
+
+input[type="checkbox"] {
     width: 20px;
     height: 20px;
 }
