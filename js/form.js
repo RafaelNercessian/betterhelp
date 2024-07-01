@@ -30,6 +30,10 @@ $(document).ready(function () {
 
     $('#state').select2();
 
+    $('#state').on('select2:select', function (e) {
+        $(this).valid();
+    });
+
     $("#phone").mask("(999) 999-9999");
 
 
@@ -60,15 +64,47 @@ $(document).ready(function () {
             },
             accept: {
                 required: true
+            },
+            state: {
+                required: true
             }
         },
-        errorPlacement(error, element) {
+        messages: {
+            first_name: "Required",
+            last_name: "Required",
+            email: {
+                required: "Required",
+                email: "Please enter a valid email address"
+            },
+            address: "Required",
+            city: "Required",
+            zip: "Required",
+            phone: "Required",
+            accept: "Required",
+            state: "Required",
+        },
+        errorElement: 'span',
+        errorPlacement: function (error, element) {
             if (element.attr('name') === 'accept') {
                 error.insertAfter($('#label__accept'));
             } else {
-                error.insertAfter(element);
+                error.insertAfter(element.siblings('label'));
             }
         },
+        highlight: function (element) {
+            if ($(element).attr('id') === 'state') {
+                $(element).next('.select2-container').find('.select2-selection').addClass('error-input');
+            } else {
+                $(element).addClass('error-input');
+            }
+        },
+        unhighlight: function (element) {
+            if ($(element).attr('id') === 'state') {
+                $(element).next('.select2-container').find('.select2-selection').removeClass('error-input');
+            } else {
+                $(element).removeClass('error-input');
+            }
+        }
     });
 
     $('.form_input--submit').on('click', function (e) {
