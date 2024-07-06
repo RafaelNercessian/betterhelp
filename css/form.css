@@ -160,7 +160,7 @@ label.error {
 }
 
 .form__label.form__label--checkbox {
-    color: var(--color-gray-dark);
+    color: #000000;
     font-family: 'Poppins', 'sans-serif';
     font-size: 1.2rem;
     font-style: normal;
@@ -169,6 +169,7 @@ label.error {
     margin-top: 0;
     margin-bottom: 0;
     max-width: 40rem;
+    padding-left: 1rem;
 }
 
 .form__label--checkbox--marketing {
@@ -191,7 +192,7 @@ input[type="checkbox"] {
 
 .form__section--disclaimer div {
     display: flex;
-    align-items: center;
+    align-items: start;
     margin-left: 5.5rem;
     margin-bottom: 0.7rem;
 }
@@ -318,7 +319,10 @@ span.error {
 }
 
 @media screen and (max-width: 768px) {
-
+    .image_yellow_shape,
+    .image_blue_shape{
+        display: none;
+    }
     .form__section {
         flex-direction: column;
         gap: 0;

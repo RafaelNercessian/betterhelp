@@ -14,7 +14,7 @@ html {
 .linkemail:focus,
 .linkemail:visited,
 .linkemail:hover {
-    color: white !important;
+    color: var(--color-gray) !important;
     text-decoration: none;
 }
 
@@ -671,14 +671,14 @@ strong {
 }
 
 .blockfifthsectioncorporate__svg--stats--one .circle, .blockfifthsectioncorporate__svg--stats--two .circle, .blockfifthsectioncorporate__svg--stats--three .circle {
-    stroke: #097bc2;
+    stroke: #0174DF;
     fill: none;
     stroke-width: 2.8;
     stroke-linecap: round;
 }
 
 .blockfifthsectioncorporate__section[data-emergence=visible] .blockfifthsectioncorporate__svg--stats--one .circle, .blockfifthsectioncorporate__section[data-emergence=visible] .blockfifthsectioncorporate__svg--stats--two .circle, .blockfifthsectioncorporate__section[data-emergence=visible] .blockfifthsectioncorporate__svg--stats--three .circle {
-    stroke: #097bc2;
+    stroke: #0174DF;
     fill: none;
     stroke-width: 3.2;
     stroke-linecap: round;
@@ -1098,7 +1098,6 @@ strong {
     line-height: 5.8rem;
     text-align: center;
     color: #333;
-    margin-bottom: 4rem;
     padding-top: 10rem;
 }
 
@@ -1108,6 +1107,7 @@ strong {
     width: calc(100% - 4.8rem);
     margin-left: auto;
     margin-right: auto;
+    margin-top: 4rem;
 }
 
 .iframe-container div {
@@ -1318,14 +1318,14 @@ strong {
     left: 0;
     bottom: 0;
     position: absolute;
-    height: 100%;
+    height: 80%;
 }
 
 .blockninthsectionstnebraska__img--blue--shape--2 {
     right: 0;
     bottom: -6rem;
     position: absolute;
-    height: 100%;
+    height: 80%;
 }
 
 .blockninthsectionstnebraska__img--blue--shape--3 {
@@ -1397,7 +1397,7 @@ strong {
 }
 
 .blockfootersection__p--one {
-    color: #FFF;
+    color: var(--color-gray);
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -2110,14 +2110,14 @@ strong {
     }
 
     .blockfootersection__p--one a {
-        color: white;
+        color: var(--color-gray);
         text-decoration: none;
     }
 
     .blockfootersection__p--one a:focus,
     .blockfootersection__p--one a:visited,
     .blockfootersection__p--one a:hover {
-        color: white;
+        color: var(--color-gray);
         text-decoration: none;
     }
 }
@@ -2156,7 +2156,7 @@ strong {
 @media screen and (max-width: 979px) {
     .blockninthsectionstnebraska__section {
         padding-bottom: 3rem;
-        min-height: 58rem;
+        min-height: 28rem;
         padding-left: 0;
         padding-right: 0;
     }
@@ -2169,6 +2169,6 @@ strong {
 
 @media screen and (max-width: 420px) {
     .blockninthsectionstnebraska__section {
-        min-height: 51rem;
+        min-height: 21rem;
     }
 }

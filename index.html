@@ -270,6 +270,9 @@
     <!-- Testimonials -->
     <section class="blockfirstsectionparents__section">
         <h2 class="blockfirstsectionparents__h2">Real families, real stories</h2>
+        <div class="trustpilot-widget" data-locale="en-US" data-template-id="5419b6ffb0d04a076446a9af" data-businessunit-id="5cae568f58378f0001216eeb" data-style-height="20px" data-style-width="100%" data-theme="light">
+            <a href="https://www.trustpilot.com/review/mightier.com" target="_blank" rel="noopener">Trustpilot</a>
+        </div>
         <div class="iframe-container">
             <div class="blockfirstsectionparents__div--iframe--container" data-vimeo-initialized="true">
                 <iframe src="https://player.vimeo.com/video/783779315?app_id=122963&amp;texttrack=en-x-autogen"
@@ -353,7 +356,7 @@
         <div class="blockfootersection__div">
             <p class="blockfootersection__p--one"><a class="linkemail" target="_blank" href="https://www.mightier.com/privacy-policy/">Privacy
                 Policy</a>
-                | <a class="linkemail" target="_blank" href="https://www.mightier.com/terms-of-use"> Terms and Conditions </a>| © 2022
+                | <a class="linkemail" target="_blank" href="https://www.mightier.com/terms-of-use"> Terms of Use </a>| © <span id="currentYear"></span>
                 Neuromotion Labs.
                 All
                 rights reserved.</p>
@@ -364,5 +367,9 @@
     </section>
 </footer>
 <script src="js/home.js"></script>
+<script src="js/tp.widget.bootstrap.min.js"></script>
+<script>
+    document.querySelector('#currentYear').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
