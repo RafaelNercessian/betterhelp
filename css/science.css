@@ -1,0 +1,1511 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.science .wp-block-columns {
+    -ms-flex-wrap: nowrap !important;
+    flex-wrap: nowrap !important
+}
+
+.blockthirteenthsectionhome__section--new {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 396px;
+    position: relative;
+    background: #0c99f1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.blockthirteenthsectionhome__div--content--wrapper {
+    margin-left: 50px;
+    z-index: 1
+}
+
+.blockthirteenthsectionhome__img--blue--shape--left {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    pointer-events: none
+}
+
+.blockthirteenthsectionhome__img--blue--shape--right {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    pointer-events: none
+}
+
+.blockthirteenthsectionhome__img {
+    position: relative;
+    z-index: 1
+}
+
+.blockthirteenthsectionhome__h3 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 12px
+}
+
+.blockthirteenthsectionhome__p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    color: #fff;
+    margin-left: 22px
+}
+
+.blockthirteenthsectionhome__div--guarantee {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.blockthirteenthsectionhome__a {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0
+}
+
+.blockfirstsectionhome__a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #f37500;
+    padding: 14px 32px;
+    border: 1px solid #f37500;
+    background: #fff;
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    border-radius: 150px;
+    text-decoration: none;
+    width: 233px;
+    position: relative;
+    z-index: 1
+}
+
+.blockfirstsectionhome__a:focus, .blockfirstsectionhome__a:active, .blockfirstsectionhome__a:visited, .blockfirstsectionhome__a:hover {
+    background: #fff;
+    color: #f37500
+}
+
+.blockfirstsectionhome__a.blockfirstsectionhome__a--orange {
+    background: #f37500;
+    color: #fff
+}
+
+.blockfirstsectionscience__img--blue--background--mobile, .blockfirstsectionscience__img--blue--background--tablet, .blockfirstsectionscience__img--blue--background--desktop, .blockfirstsectionscience__img--blue--background--desktop--medium {
+    display: none
+}
+
+.blockfirstsectionscience__img--blue--background--desktop {
+    margin-top: 45px
+}
+
+.blockfirstsectionscience__img--purple--lavaling {
+    position: absolute;
+    bottom: -1.7%;
+    right: 25%;
+    width: 149px;
+    rotate: -8deg
+}
+
+.blockfirstsectionscience__img--blue--pattern {
+    position: absolute;
+    left: 0;
+    bottom: 19%;
+    width: 150px
+}
+
+.blockfirstsectionscience__h1 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    max-width: 548px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    right: 0;
+    left: 0;
+    top: 25%
+}
+
+.blockfirstsectionscience__div--button {
+    max-width: 1152px;
+    position: absolute;
+    top: 62%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center
+}
+
+.blockfirstsectionscience__div--wrapper--images {
+    position: relative
+}
+
+.blockfirstsectionscience__a {
+    display: block;
+    background: white;
+    color: var(--color-orange);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-decoration: none;
+    max-width: 243px;
+    padding: 10px 24px 10px 24px;
+    border-radius: 150px;
+    position: relative;
+    padding-right: 48px
+}
+
+.blockfirstsectionscience__a img {
+    position: absolute;
+    right: 24px;
+    top: 13px;
+    width: 16px
+}
+
+.blockfirstsectionscience__a:visited {
+    color: var(--color-orange)
+}
+
+.blockfirstsectionscience__a:hover {
+    color: var(--color-orange)
+}
+
+.blockfirstsectionscience__a:hover img {
+    -webkit-animation: hoverAnimationDownloadImage .1s forwards;
+    animation: hoverAnimationDownloadImage .1s forwards
+}
+
+@-webkit-keyframes hoverAnimationDownloadImage {
+    100% {
+        padding-top: 2px
+    }
+}
+
+@keyframes hoverAnimationDownloadImage {
+    100% {
+        padding-top: 2px
+    }
+}
+
+.blockfirstsectionscience__a--getintouch {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    padding: 10px 24px;
+    border: 1px solid var(--color-orange);
+    background: var(--color-orange);
+    text-decoration: none;
+    position: relative;
+    border-radius: 150px;
+    font-family: "Poppins", sans-serif;
+}
+
+.blockfirstsectionscience__a--summary {
+    border: 1px solid var(--color-orange);
+}
+
+.blockfirstsectionscience__a--getintouch:visited {
+    color: #fff !important
+}
+
+.blockfirstsectionscience__a--getintouch:hover {
+    color: #fff
+}
+
+.blockfirstsectionscience__a--getintouch:hover .chevron-science-get-in-touch {
+    -webkit-animation: hoverAnimationReadingScienceGetInTouch .5s forwards;
+    animation: hoverAnimationReadingScienceGetInTouch .5s forwards
+}
+
+@-webkit-keyframes hoverAnimationReadingScienceGetInTouch {
+    0% {
+        opacity: 0;
+        right: 18px
+    }
+
+    50% {
+        opacity: .5
+    }
+
+    100% {
+        opacity: 1;
+        right: 10px
+    }
+}
+
+@keyframes hoverAnimationReadingScienceGetInTouch {
+    0% {
+        opacity: 0;
+        right: 18px
+    }
+
+    50% {
+        opacity: .5
+    }
+
+    100% {
+        opacity: 1;
+        right: 10px
+    }
+}
+
+.blocksecondsectionscience__h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    color: #333;
+    margin-bottom: 0;
+    max-width: 482px
+}
+
+.blocksecodsectionsciencenew__div {
+    max-width: 1200px;
+    width: calc(100% - 4.8rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blocksecondsectionscience__img--orange-left--shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    pointer-events: none;
+    border-bottom-left-radius: 25px
+}
+
+.blocksecondsectionscience__img--orange-right--shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 75%
+}
+
+.blocksecondsectionscience__img--pattern--orange {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    top: 60%;
+    right: 20px;
+    pointer-events: none;
+    z-index: 1
+}
+
+.blocksecondsectionscience__img--green-right--shape {
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+    height: 40%
+}
+
+.blocksecondsectionscience__p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    color: #707070;
+    margin-top: 0;
+    max-width: 482px
+}
+
+.blocksecondsectionscience_div--textwrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-item-align: center;
+    align-self: center
+}
+
+.blocksecondsectionscience_div--wrapper {
+    max-width: 996px;
+    margin-top: 80px;
+    margin-bottom: 65px;
+    gap: 56px !important;
+    width: calc(100% - 64px)
+}
+
+.blocksecondsectionscience_img--green-left--shape {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40%;
+    border-bottom-left-radius: 25px;
+    pointer-events: none
+}
+
+.blocksecondsectionscience_img--pattern--green {
+    position: absolute;
+    height: 50px;
+    top: 50%;
+    left: 5px;
+    pointer-events: none;
+    z-index: 1
+}
+
+.blockthirdsectionscience__div {
+    background-color: #f5f5f5;
+    padding-bottom: 80px
+}
+
+.blockthirdsectionscience__h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #707070;
+    padding-top: 80px;
+    margin-bottom: 24px
+}
+
+.blockthirdsectionscience__a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #333;
+    text-decoration: none;
+    width: 164px;
+    border: 1px solid #d6d6d6;
+    height: 118px;
+    border-radius: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.blockthirdsectionscience__a:hover {
+    background-color: #ebebeb;
+    color: #333
+}
+
+.blockthirdsectionscience__a.clicked {
+    background-color: #333;
+    color: #fff
+}
+
+.blockthirdsectionscience__div--outter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 16px
+}
+
+.blockthirdsectionscience__img {
+    pointer-events: none;
+    width: 32px;
+    padding-bottom: 8px
+}
+
+.blockfourthsectionscience__h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #333;
+    max-width: 704px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.blockfourthsectionscience__h3, .blockfifthsectionscience__h3, .blocksixthsectionscience__h3 {
+    margin-right: 32px
+}
+
+.blockfourthsectionscience__div--innerimg {
+    width: 318px;
+    height: auto;
+    background: #fcf0f4;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative
+}
+
+.blockfourthsectionscience__div--outterone, .blockfifthsectionscience__div--outtertwo, .blocksixthsectionscience__div--outterthree {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 996px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.blockfourthsectionscience__p--one, .blockfourthsectionscience__p--two {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    color: #9b6877;
+    width: calc(100% - 32px);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative
+}
+
+.blockfourthsectionscience__p--one {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+    position: relative
+}
+
+.blockfourthsectionscience__p--two, .blockfifthhsectionscience__p--two {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative
+}
+
+.blockfourthsectionscience__div--innercontent, .blockfifthsectionscience__div--innercontent, .blocksixthsectionscience__div--innercontent {
+    background: #fff;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    width: 678px
+}
+
+.blockfourthsectionscience__h3, .blockfifthsectionscience__h3, .blocksixthsectionscience__h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #333;
+    margin-top: 40px;
+    margin-left: 32px;
+    margin-bottom: 8px
+}
+
+.blockfourthsectionscience__span--one, .blockfourthsectionscience__span--two, .blockfifthsectionscience__span--one, .blockfifthsectionscience__span--two, .blocksixthsectionscience__span--one {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070
+}
+
+.blockfourthsectionscience__p--three, .blockfifthsectionscience__p--three, .blocksixthsectionscience__p--three, .blockfourthsectionscience__p--four--house {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    margin-left: 32px;
+    color: #707070;
+    position: relative
+}
+
+.blockfourthsectionscience__img--aces {
+    width: 39px !important
+}
+
+.blockfourthsectionscience__img--pink--shape--left {
+    position: absolute;
+    top: 0;
+    width: 50%;
+    border-top-left-radius: 25px;
+    pointer-events: none
+}
+
+.blockfourthsectionscience__img--pink--shape--right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+    width: 80%
+}
+
+.blockfourthsectionscience__img--pattern--pink {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70px
+}
+
+.blockfourthsectionscience__p--four, .blockfifthsectionscience__p--four {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 32px;
+    margin-right: 5px;
+    position: relative
+}
+
+.blockfourthsectionscience__div--location, .blockfifthsectionscience__div--location {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.blockfourthsectionscience__div--location img {
+    width: 215px
+}
+
+.blockfourthsectionscience__a, .blockfifthsectionscience__a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    width: 187px;
+    text-decoration: none;
+    background: #012b60;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 150px;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    margin-left: 32px
+}
+
+.blockfourthsectionscience__a:visited, .blockfourthsectionscience__a:hover, .blockfifthsectionscience__a:visited, .blockfifthsectionscience__a:hover {
+    color: #fff
+}
+
+.blockfourthsectionscience__a:hover, .blockfifthsectionscience__a:hover {
+    background: #0c99f1
+}
+
+.blockfourthsectionscience__a:hover .chevron-science, .blockfifthsectionscience__a:hover .chevron-science {
+    -webkit-animation: hoverAnimationReadingScience .5s forwards;
+    animation: hoverAnimationReadingScience .5s forwards
+}
+
+@-webkit-keyframes hoverAnimationReadingScience {
+    0% {
+        opacity: 0;
+        right: 18px
+    }
+
+    50% {
+        opacity: .5
+    }
+
+    100% {
+        opacity: 1;
+        right: 10px
+    }
+}
+
+@keyframes hoverAnimationReadingScience {
+    0% {
+        opacity: 0;
+        right: 18px
+    }
+
+    50% {
+        opacity: .5
+    }
+
+    100% {
+        opacity: 1;
+        right: 10px
+    }
+}
+
+.blockfourthsectionscience__p--one, .blockfourthsectionscience__p--two, .blockfourthsectionscience__p--two, .blockfifthhsectionscience__p--two {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    position: relative
+}
+
+.chevron-science {
+    background: url("https://www.mightier.com/wp-content/uploads/2022/06/CHEVRON-RIGHT.svg") no-repeat;
+    background-size: 100%;
+    width: 7px;
+    height: 28px;
+    position: absolute;
+    background-position: center;
+    right: 16px;
+    opacity: 0;
+    pointer-events: none
+}
+
+.blockfourthsectionscience__a--icon {
+    width: 237px
+}
+
+.blockfourthsectionscience__p--four--therapy {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 5px;
+    position: relative
+}
+
+.blockfourthsectionscience__a--abstract {
+    width: 164px
+}
+
+.blockfourthsectionscience__p--three, .blockfifthsectionscience__p--three, .blocksixthsectionscience__p--three, .blockfifthsectionscience__p--fifth, .blockfourthsectionscience__a--icon, .blockfourthsectionscience__p--four--therapy, .blockfourthsectionscience__p--quebec {
+    margin-right: 32px;
+    position: relative
+}
+
+.blockfifthsectionscience__div--innerimg {
+    background: #fef9f1;
+    width: 318px;
+    height: auto;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative
+}
+
+.blockfifthsectionscience__p--one {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    color: #ae6434;
+    max-width: 249px;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 32px);
+    position: relative
+}
+
+.blockfifthsectionscience__div--outtertwo {
+    margin-top: 24px;
+    margin-bottom: 24px
+}
+
+.blockfifthsectionscience__p--fifth {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #707070;
+    margin-left: 32px;
+    margin-top: 24px;
+    margin-bottom: 80px;
+    position: relative
+}
+
+.blockfifthsectionscience__p--fifthtrials {
+    margin-bottom: 40px;
+    position: relative
+}
+
+.blocksixthsectionscience__div--innerimg {
+    width: 318px;
+    height: auto;
+    background: #dbf3ef;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative
+}
+
+.blocksixthsectionscience__p--one--therapy {
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative
+}
+
+.blocksixthsectionscience__p--one {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    color: #158565;
+    max-width: 249px;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 32px);
+    position: relative
+}
+
+.blocksixthsectionscience__div--margin {
+    margin-bottom: 16px
+}
+
+.blockseventhsectionscience__p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #707070;
+    margin-bottom: 0
+}
+
+.blockseventhsectionscience__figure {
+    background: url("./../images/ipad-calming.png");
+    background-repeat: no-repeat;
+    background-size: 486px 414px;
+    height: 414px;
+    width: 486px
+}
+
+.blockseventhsectionscience__div--wrapper {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding-left: 32px;
+    margin-left: auto;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: auto;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 60px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.blockseventhsectionscience__div--wrapper--text {
+    max-width: 512px
+}
+
+.blockseventhsectionscience__h3 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: normal;
+    color: #000;
+    margin-top: 8px;
+    margin-bottom: 16px
+}
+
+.blockseventhsectionscience__p--bold {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative
+}
+
+.blockseventhsectionscience__p--subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: #000;
+    position: relative
+}
+
+.blockseventhsectionscience__div--figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.blockeighthsectionscience__div--wrapper {
+    background: url("https://www.mightier.com/wp-content/uploads/2022/10/Science-Family-Background.png") no-repeat, #0c99f1;
+    height: 332px;
+    background-size: 100% 100%;
+    margin-top: 162px;
+    max-width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+    width: calc(100% - 64px)
+}
+
+.blockeighthsectionscience__img--red--lavaling {
+    position: absolute;
+    top: -144px;
+    width: 206px;
+    right: 20px;
+    -webkit-filter: drop-shadow(4px 30px 30px rgba(51, 51, 51, 0.24));
+    filter: drop-shadow(4px 30px 30px rgba(51, 51, 51, 0.24))
+}
+
+.blockeighthsectionscience__img--rock--lavaling {
+    position: absolute
+}
+
+.blockeighthsectionscience__h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #fff
+}
+
+.blockeighthsectionscience__p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    margin-top: 8px;
+    margin-bottom: 32px
+}
+
+.blockeighthsectionscience__a {
+    background: #012b60;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 48px 12px 24px;
+    border-radius: 150px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    position: relative
+}
+
+.blockeighthsectionscience__a img {
+    width: 16px
+}
+
+.blockeighthsectionscience__a:hover {
+    color: #fff
+}
+
+.blockeighthsectionscience__a:hover img {
+    top: 14px
+}
+
+.blockeighthsectionscience__a:visited {
+    color: #fff
+}
+
+.blockeighthsectionscience__a img {
+    position: absolute;
+    top: 12px;
+    right: 24px
+}
+
+.blockeighthsectionscience__div--link {
+    text-align: center
+}
+
+.blockninethsectionscience__p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070;
+    text-align: center;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    margin-top: 190px;
+    margin-bottom: 8px
+}
+
+.blockninethsectionscience__h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 68px;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px
+}
+
+.blockninethsectionscience__figure {
+    text-align: center
+}
+
+.blockninethsectionscience__p--main {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #333;
+    max-width: 384px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative
+}
+
+.blockfirstsectionscience__div--wrapper--content {
+    position: relative
+}
+
+.blockfirstsectionscience__img--blue--background--mobile,
+.blockfirstsectionscience__img--blue--background--tablet,
+.blockfirstsectionscience__img--blue--background--desktop,
+.blockfirstsectionscience__img--blue--background--desktop--medium,
+.blockfirstsectionscience__img--blue--background--desktop--small {
+    width: 100%;
+}
+
+.blocktenthsectionscience__a {
+    padding: 10px 24px;
+    gap: 10px;
+    width: 147px;
+    height: 48px;
+    border: 1px solid #85ccf8;
+    border-radius: 150px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #097bc2;
+    position: relative
+}
+
+.blocktenthsectionscience__a:visited {
+    color: #097bc2
+}
+
+.blocktenthsectionscience__a:hover .chevron-science-get-in-touch {
+    -webkit-animation: hoverAnimationReadingScienceGetInTouch .5s forwards;
+    animation: hoverAnimationReadingScienceGetInTouch .5s forwards
+}
+
+@keyframes hoverAnimationReadingScienceGetInTouch {
+    0% {
+        opacity: 0;
+        right: 18px
+    }
+
+    50% {
+        opacity: .5
+    }
+
+    100% {
+        opacity: 1;
+        right: 10px
+    }
+}
+
+.blocktenthsectionscience__div {
+    text-align: center;
+    margin-bottom: 120px
+}
+
+.blockeleventhsectionscience__img, .blockeleventhsectionscience__img--pink {
+    display: none
+}
+
+.blockeleventhsectionscience__img--desktop, .blockeleventhsectionscience__img--pink--desktop {
+    position: absolute;
+    height: 800px
+}
+
+.blockeleventhsectionscience__img--pink--desktop {
+    right: 0;
+    margin-top: -400px;
+    height: 600px;
+    z-index: -1
+}
+
+.blockeleventhsectionscience__img--desktop {
+    left: -60px;
+    z-index: -1;
+    margin-top: -550px
+}
+
+.blockeleventhsectionscience__img--pink--pattern {
+    right: 0;
+    margin-top: -400px
+}
+
+.blockeleventhsectionscience__img--pink--pattern {
+    position: absolute;
+    width: 150px
+}
+
+.chevron-science-get-in-touch {
+    background: url("https://www.mightier.com/wp-content/uploads/2022/06/CHEVRON-RIGHT.svg") no-repeat;
+    background-size: 100%;
+    width: 7px;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    right: 16px;
+    opacity: 0;
+    pointer-events: none;
+    top: 0
+}
+
+.blockninethsectionscience__section {
+    position: relative;
+}
+
+.blockninethsectionscience__img--yellow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.blockninethsectionscience__img--green {
+    position: absolute;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.blockninethsectionscience__img--orange{
+    position: absolute;
+    right: 0;
+    top:0;
+    pointer-events: none;
+}
+
+.blockninethsectionscience__section--wrapper {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 120px;
+}
+
+@media screen and (max-width: 1025px) {
+    .blocksecondsectionscience_div--wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+        align-items: center !important
+    }
+
+    .blockfourthsectionscience__div--innerimg, .blockfifthsectionscience__div--innerimg, .blocksixthsectionscience__div--innerimg {
+        background-size: cover
+    }
+}
+
+@media screen and (min-width: 1025px)and (max-width: 1200px) {
+    .blockeighthsectionscience__div--wrapper, .blockfirstsectionscience__div--button {
+        max-width: 977px
+    }
+}
+
+@media screen and (min-width: 768px)and (max-width: 1025px) {
+    .blockfirstsectionscience__div--button {
+        max-width: 720px
+    }
+
+    .blockseventhsectionscience__div--wrapper {
+        padding-left: 32px
+    }
+
+    .blocksecondsectionscience_div--wrapper {
+        width: calc(100% - 64px)
+    }
+
+    .blockfourthsectionscience__section--one {
+        width: calc(100% - 48px);
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .blockseventhsectionscience__div--wrapper--text {
+        max-width: 400px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blockfourthsectionscience__section--innerone {
+        max-width: 710px;
+        display: grid;
+        -ms-flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        grid-gap: 24px;
+        gap: 24px;
+        width: calc(100% - 48px)
+    }
+
+    .blockfourthsectionscience__div--innerimg, .blockfifthsectionscience__div--innerimg, .blocksixthsectionscience__div--innerimg {
+        height: 218px
+    }
+
+    .blockfourthsectionscience__section--innerone > div {
+        -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+        flex: 50%;
+        margin-bottom: 16px
+    }
+
+    .blockfourthsectionscience__div--outterone, .blockfifthsectionscience__div--outtertwo, .blocksixthsectionscience__div--outterthree {
+        max-width: 390px;
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column
+    }
+
+    .blockfourthsectionscience__div--innercontent, .blockfifthsectionscience__div--innercontent, .blocksixthsectionscience__div--innercontent {
+        height: auto
+    }
+
+    .blockfourthsectionscience__div--innercontent, .blockfifthsectionscience__div--innercontent, .blocksixthsectionscience__div--innercontent, .blockfourthsectionscience__div--innerimg, .blockfifthsectionscience__div--innerimg, .blocksixthsectionscience__div--innerimg {
+        max-width: 390px;
+        width: 100%
+    }
+
+    .blockfifthsectionscience__div--innercontent, .blocksixthsectionscience__div--innercontent {
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0
+    }
+
+    .blockfourthsectionscience__div--innerimg, .blockfifthsectionscience__div--innerimg, .blocksixthsectionscience__div--innerimg {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 25px
+    }
+
+    .blockfourthsectionscience__h3, .blockfifthsectionscience__h3, .blocksixthsectionscience__h3 {
+        margin-top: 32px
+    }
+
+    .blockfourthsectionscience__div--location, .blockfifthsectionscience__div--location, .blocksixthsectionscience__div--location {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline
+    }
+
+    .blockfourthsectionscience__div--innercontent {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 25px
+    }
+
+    .blockfourthsectionscience__a {
+        margin-top: 24px
+    }
+
+    .blockfifthsectionscience__div--outtertwo {
+        margin: 0
+    }
+
+    .blockfourthsectionscience__section--lastsection {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex
+    }
+
+    .blockfourthsectionscience__section--lastsection > div {
+        -webkit-box-flex: unset;
+        -ms-flex: unset;
+        flex: unset
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .blockseventhsectionscience__h3 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .blockthirteenthsectionhome__img--blue--shape--left, .blockthirteenthsectionhome__div--tablet--img--wrapper {
+        display: none
+    }
+}
+
+@media screen and (min-width: 769px)and (max-width: 980px) {
+    .blockfirstsectionscience__h1 {
+        font-size: 48px;
+        line-height: 58px;
+        text-align: center
+    }
+
+    .blockfirstsectionscience__img--purple--lavaling {
+        position: absolute;
+        bottom: -7.7%;
+        right: 7%;
+        width: 149px;
+        rotate: -14deg
+    }
+
+    .blockfirstsectionscience__h1 {
+        top: 20%
+    }
+
+    .blockfirstsectionscience__img--blue--pattern {
+        width: 90px
+    }
+
+    .blocksecondsectionscience_div--wrapper {
+        position: relative
+    }
+
+    .blocksecondsectionscience__figure img {
+        width: 495px;
+        position: absolute;
+        top: -50px;
+        left: -170px
+    }
+
+    .blockeighthsectionscience__img--red--lavaling {
+        width: 150px;
+        top: -106px
+    }
+
+    .blockeighthsectionscience__img--rock--lavaling {
+        width: 141px;
+        -webkit-filter: drop-shadow(4px 30px 30px rgba(51, 51, 51, 0.24));
+        filter: drop-shadow(4px 30px 30px rgba(51, 51, 51, 0.24))
+    }
+
+    .blockseventhsectionscience__div--wrapper {
+        position: relative
+    }
+
+    .blockseventhsectionscience__figure img {
+        position: absolute;
+        top: 20%
+    }
+}
+
+@media screen and (min-width: 860px)and (max-width: 980px) {
+    .blocksecondsectionscience__figure img {
+        width: 495px;
+        position: absolute;
+        top: -45px;
+        left: -120px
+    }
+
+    .blockthirdsectionscience__div {
+        margin-top: 110px
+    }
+}
+
+@media screen and (min-width: 981px)and (max-width: 1280px) {
+    .blockfirstsectionscience__h1 {
+        top: 15%
+    }
+
+    .blockfirstsectionscience__img--purple--lavaling {
+        bottom: -2.7%
+    }
+}
+
+@media screen and (min-width: 769px)and (max-width: 1349px) {
+    .blockfirstsectionscience__img--blue--background--desktop--small {
+        margin-top: 36px;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .blockfirstsectionscience__img--blue--background--desktop--small, .blockfirstsectionscience__img--blue--background--desktop {
+        display: none
+    }
+
+    .blockfirstsectionscience__img--blue--background--desktop--medium {
+        display: block;
+        width: 100%;
+    }
+
+    .blockfirstsectionscience__img--purple--lavaling {
+        bottom: -7.7%;
+        rotate: -12deg
+    }
+
+    .blockfirstsectionscience__h1 {
+        top: 15%
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .blockfirstsectionscience__img--purple--lavaling {
+        bottom: -7.2%;
+        rotate: -13deg
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .blockfirstsectionscience__h1 {
+        top: 22%
+    }
+
+    .blockfirstsectionscience__img--purple--lavaling {
+        bottom: -6%;
+        rotate: -13deg
+    }
+}
+
+@media screen and (min-width: 2240px) {
+    .blockfirstsectionscience__img--purple--lavaling {
+        bottom: -4.2%
+    }
+
+    .blockfirstsectionscience__img--blue--background--desktop--medium {
+        display: none
+    }
+
+    .blockfirstsectionscience__img--blue--background--desktop {
+        display: block;
+        width: 100%;
+    }
+
+    .blockfirstsectionscience__img--blue--pattern {
+        position: absolute;
+        left: 18%;
+        bottom: 22%;
+        width: 150px
+    }
+
+    .blockfirstsectionscience__h1 {
+        top: 15%
+    }
+}
+
+@media screen and (min-width: 2600px) {
+    .blockfirstsectionscience__img--purple--lavaling {
+        bottom: -3.2%;
+        rotate: -14deg
+    }
+}
+
+@media screen and (min-width: 3170px) {
+    .blockfirstsectionscience__img--purple--lavaling {
+        bottom: -1.7%
+    }
+
+    .blockfirstsectionscience__h1 {
+        top: 25%
+    }
+}

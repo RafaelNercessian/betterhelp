@@ -1,0 +1,71 @@
+
+.main__header--outter {
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 4.8rem);
+}
+
+.main__header {
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main__a.main__a--top {
+    width: 16rem;
+    border-radius: 9.7rem;
+    background: #F37500;
+    box-shadow: 0 2.607px 2.607px 0px rgba(12, 153, 241, 0.25);
+    color: white;
+    text-decoration: none;
+    display: flex;
+    height: 4.4rem;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main__a.main__a--top:visited,
+.main__a.main__a--top:focus {
+    color: white;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.st-nebraska .header__div--wrapper {
+    justify-content: space-between;
+}
+
+.st-nebraska .header__div--wrapper .header__div--pricing {
+    background: #f37500;
+    border-radius: 15.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0px 4px 4px 0px rgba(12, 153, 241, 0.25);
+}
+
+.st-nebraska .header__div--wrapper .header__div--pricing a:hover {
+    background-color: #D66801;
+}
