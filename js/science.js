@@ -1,16 +1,6 @@
 jQuery(document).ready(function ($) {
     //Change home
     var url = 'https://www.mightier.com';
-    switch (true) {
-        case window.location.href.includes('localhost'):
-            url = 'http://localhost/mightierga';
-            break;
-        case window.location.href.includes('mightier.ml'):
-            url = 'http://mightier.ml';
-            break;
-        default:
-            break;
-    }
 
     //Buttons
     var lab_button = $('.blockthirdsectionscience__a--lab');

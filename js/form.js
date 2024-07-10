@@ -11,6 +11,13 @@ function checkFormIsValid() {
     setTimeout(checkFormIsValid, 1000);
 }
 
+function showErrorPage() {
+    $('.form').hide();
+    $('.image_blue_shape').hide();
+    $('.image_yellow_shape').hide();
+    $('.submission').hide();
+    $('.error').show();
+}
 
 $(document).ready(function () {
     var anonymized_code = '';
@@ -130,10 +137,8 @@ $(document).ready(function () {
         if (!$('.form__details').valid()) {
             return false;
         }
-        $('.form').hide();
-        $('.image_blue_shape').hide();
-        $('.image_yellow_shape').hide();
-        $('.submission').show();
+
+        $('#spinner').show();
 
         var data = {
             "first_name": $('#first_name').val(),
@@ -161,8 +166,22 @@ $(document).ready(function () {
             "data": JSON.stringify(data),
         };
 
-        $.ajax(settings).done(function (response) {
-            console.log(response);
-        });
+        $.ajax(settings)
+            .done(function (response, textStatus, jqXHR) {
+                $('#spinner').hide();
+                if (jqXHR.status === 201) {
+                    console.log(response);
+                    $('.form').hide();
+                    $('.image_blue_shape').hide();
+                    $('.image_yellow_shape').hide();
+                    $('.submission').show();
+                } else {
+                    showErrorPage();
+                }
+            })
+            .fail(function (jqXHR, textStatus, errorThrown) {
+                $('#spinner').hide();
+                showErrorPage();
+            });
     })
 });

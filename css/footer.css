@@ -23,6 +23,13 @@
     line-height: 1.6rem;
 }
 
+.linkemail,
+.linkemail:focus,
+.linkemail:visited,
+.linkemail:hover {
+    color: var(--color-gray) !important;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 490px) {
     .blockfootersection__section {
