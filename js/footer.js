@@ -1,7 +1,3 @@
-// Global variables to store the parameters
-var anonymized_code;
-var institution_id;
-
 function isValidParam(param) {
     return param && param.trim() !== '';
 }
@@ -13,12 +9,18 @@ function redirectToErrorPage() {
 function mockApiCall() {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve({isEligible: true});
+            resolve({isEligible: false});
         }, 500);
     });
 }
 
 function proceedToFormPage(anonymized_code, institution_id) {
+    //If form.html, we don't redirect
+    if (window.location.href.includes("form.html")) {
+        $('.bodyform').show();
+        return;
+    }
+
     var formUrl = 'form.html';
     var newQueryParams = new URLSearchParams();
 
@@ -33,27 +35,6 @@ function proceedToFormPage(anonymized_code, institution_id) {
     window.location.href = formUrl + (newQueryParams.toString() ? '?' + newQueryParams.toString() : '');
 }
 
-function setCookie(name, value, minutes) {
-    var expires = "";
-    if (minutes) {
-        var date = new Date();
-        date.setTime(date.getTime() + (minutes * 60 * 1000));
-        expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
-}
-
-function getCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-    }
-    return null;
-}
-
 function checkEligibilityAndProceed(anonymized_code, institution_id) {
     var settings = {
         "url": `https://api2.mightier.com/partner/bh/eligible?userId=${encodeURIComponent(anonymized_code)}&orgId=${encodeURIComponent(institution_id)}`,
@@ -61,7 +42,7 @@ function checkEligibilityAndProceed(anonymized_code, institution_id) {
         "timeout": 0,
     };
 
-    /*$.ajax(settings)
+    $.ajax(settings)
         .done(function (response) {
             console.log(response);
             if (response.isEligible == false) {
@@ -74,12 +55,11 @@ function checkEligibilityAndProceed(anonymized_code, institution_id) {
         .fail(function (jqXHR, textStatus, errorThrown) {
             console.error("Error checking eligibility:", textStatus, errorThrown);
             redirectToErrorPage();
-        });*/
+        });
 
-    console.log('Aqui');
 
     //Used for testing
-    mockApiCall()
+    /*mockApiCall()
         .then(function (response) {
             console.log("API response:", response);
             if (response.isEligible === false) {
@@ -92,20 +72,19 @@ function checkEligibilityAndProceed(anonymized_code, institution_id) {
         .catch(function (error) {
             console.error("Error checking eligibility:", error);
             redirectToErrorPage();
-        });
+        });*/
 }
 
 $(document).ready(function () {
     // Parse and validate URL parameters
+    sessionStorage.removeItem('eligibilityChecked');
     var queryParams = new URLSearchParams(window.location.search),
         anonymized_code = queryParams.get('anonymized_code'),
         institution_id = queryParams.get('institution_id');
 
     if (window.location.href.includes("form.html")) {
-        // Check if eligibility was checked in the last 5 minutes
-        var eligibilityChecked = getCookie('eligibilityChecked');
-
-        if (!eligibilityChecked) {
+        // Check if this is the first visit
+        if (!sessionStorage.getItem('eligibilityChecked')) {
             // Validate parameters
             if (!isValidParam(anonymized_code) || !isValidParam(institution_id)) {
                 console.error("Missing or invalid parameters");
@@ -114,10 +93,10 @@ $(document).ready(function () {
             }
             checkEligibilityAndProceed(anonymized_code, institution_id);
 
-            // Set a cookie that expires in 5 minutes
-            setCookie('eligibilityChecked', 'true', 5);
+            // Set a flag in sessionStorage to indicate eligibility has been checked
+            sessionStorage.setItem('eligibilityChecked', 'true');
         } else {
-            // If checked within the last 5 minutes, just show the form
+            // If not the first visit, just show the form
             $('.bodyform').show();
         }
     }
